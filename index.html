@@ -2259,7 +2259,12 @@ plItems.forEach(function(pl){
     try {
       composer = new THREE.EffectComposer(renderer);
       composer.addPass(new THREE.RenderPass(scene, camera));
-      bloomPass = new THREE.UnrealBloomPass(new THREE.Vector2(1, 1), 0.55, 0.55, 0.18);
+      bloomPass = new THREE.UnrealBloomPass(
+    new THREE.Vector2(1, 1),
+    0.45,
+    0.30,
+    0.35
+);
       bloomPass.renderToScreen = true;
       composer.addPass(bloomPass);
     } catch (e) {
