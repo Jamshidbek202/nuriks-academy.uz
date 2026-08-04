@@ -1,0 +1,2387 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Nurik's Academy — Learn English with Confidence</title>
+<meta name="description" content="Nurik's Academy — a premium English language academy in Fergana. General English, IELTS, CEFR and Kids English, taught with British Council methodology.">
+<meta name="theme-color" content="#0B0B0B">
+<link rel="icon" type="image/png" href="assets/image_01.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nurik's Academy — Learn English with Confidence">
+<meta property="og:description" content="A premium English language academy in Fergana. General English, IELTS, CEFR and Kids English, taught with British Council methodology.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nurik's Academy — Learn English with Confidence">
+<meta name="twitter:description" content="A premium English language academy in Fergana. General English, IELTS, CEFR and Kids English.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   TOKENS
+=============================================================== */
+:root{
+  --bg:#0B0B0B;
+  --bg2:#121212;
+  --bg3:#161513;
+  --gold:#D4AF37;
+  --gold-light:#EAD27E;
+  --gold-deep:#8A6D1F;
+  --beige:#F5F0E6;
+  --ink:#F7F4EE;
+  --ink-soft:rgba(247,244,238,.68);
+  --ink-faint:rgba(247,244,238,.42);
+  --line:rgba(212,175,55,.16);
+  --line-strong:rgba(212,175,55,.35);
+  --glass:rgba(255,255,255,.03);
+  --glass-brd:rgba(212,175,55,.14);
+  --radius-s:10px;
+  --radius:20px;
+  --radius-l:32px;
+  --font-d:'Manrope',sans-serif;
+  --font-b:'Inter',sans-serif;
+  --ease:cubic-bezier(.16,.8,.24,1);
+  --container:1180px;
+}
+html[data-theme="light"]{
+  --bg:#F6F1E7;
+  --bg2:#EFE7D5;
+  --bg3:#EAE1CB;
+  --ink:#171309;
+  --ink-soft:rgba(23,19,9,.68);
+  --ink-faint:rgba(23,19,9,.42);
+  --line:rgba(138,109,31,.18);
+  --line-strong:rgba(138,109,31,.4);
+  --glass:rgba(23,19,9,.03);
+  --glass-brd:rgba(138,109,31,.18);
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:auto;overflow-x:hidden;width:100%;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font-b);
+  font-size:16px;
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  transition:background .6s var(--ease),color .6s var(--ease);
+}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;margin:0;padding:0;}
+button{font-family:inherit;cursor:pointer;background:none;border:none;color:inherit;}
+h1,h2,h3,h4{font-family:var(--font-d);margin:0;font-weight:700;letter-spacing:-.02em;}
+p{margin:0;}
+::selection{background:var(--gold);color:#0B0B0B;}
+
+.container{max-width:var(--container);margin:0 auto;padding:0 32px;}
+@media(max-width:640px){.container{padding:0 20px;}}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--font-b);font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;margin-bottom:18px;
+}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--gold);display:inline-block;}
+
+.h2{font-size:clamp(2rem,4.2vw,3.4rem);line-height:1.06;color:var(--ink);}
+.h2 em{font-style:normal;color:var(--gold);}
+.lede{font-size:clamp(1rem,1.6vw,1.15rem);color:var(--ink-soft);max-width:560px;font-weight:400;line-height:1.7;}
+
+.section{position:relative;padding:min(14vw,150px) 0;}
+.section-head{margin-bottom:min(7vw,64px);}
+.section-head.center{text-align:center;margin-left:auto;margin-right:auto;display:flex;flex-direction:column;align-items:center;}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--line-strong),transparent);width:100%;}
+
+/* buttons */
+.btn{
+  position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:16px 30px;border-radius:100px;font-size:14.5px;font-weight:600;letter-spacing:.01em;
+  white-space:nowrap;transition:transform .5s var(--ease),box-shadow .5s var(--ease),background .4s,color .4s;
+  isolation:isolate;
+}
+.btn-gold{background:linear-gradient(180deg,var(--gold-light),var(--gold));color:#171309;box-shadow:0 8px 30px -8px rgba(212,175,55,.55);}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 38px -10px rgba(212,175,55,.75);}
+.btn-ghost{border:1px solid var(--line-strong);color:var(--ink);background:var(--glass);backdrop-filter:blur(6px);}
+.btn-ghost:hover{border-color:var(--gold);background:rgba(212,175,55,.08);transform:translateY(-2px);}
+.btn-sm{padding:11px 22px;font-size:13px;}
+
+/* cursor */
+.cursor-dot,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:9999;border-radius:50%;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+.cursor-dot{width:6px;height:6px;background:var(--gold-light);}
+.cursor-ring{width:34px;height:34px;border:1px solid rgba(212,175,55,.55);transition:width .25s,height .25s,opacity .3s,border-color .25s;}
+.cursor-ring.hovering{width:56px;height:56px;border-color:var(--gold);}
+@media(hover:none),(pointer:coarse){.cursor-dot,.cursor-ring{display:none;}}
+
+/* progress thread */
+.thread-rail{position:fixed;right:26px;top:50%;transform:translateY(-50%);height:min(38vh,320px);width:2px;z-index:60;display:none;}
+.thread-track{position:absolute;inset:0;background:var(--line);border-radius:2px;}
+.thread-fill{position:absolute;left:0;top:0;width:100%;height:0%;background:linear-gradient(180deg,var(--gold-light),var(--gold));border-radius:2px;box-shadow:0 0 12px rgba(212,175,55,.6);}
+@media(min-width:1000px){.thread-rail{display:block;}}
+.scrollbar-top{position:fixed;top:0;left:0;height:2px;background:var(--gold);z-index:200;width:0%;box-shadow:0 0 10px rgba(212,175,55,.7);}
+
+/* preloader */
+#preloader{position:fixed;inset:0;background:#0B0B0B;z-index:9998;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:22px;transition:opacity .8s var(--ease),visibility .8s;}
+#preloader.done{opacity:0;visibility:hidden;pointer-events:none;}
+.preload-mark{font-family:var(--font-d);color:var(--ink);font-size:15px;letter-spacing:.3em;text-transform:uppercase;opacity:.8;}
+.preload-line{width:180px;height:1px;background:rgba(212,175,55,.2);position:relative;overflow:hidden;}
+.preload-line::after{content:"";position:absolute;left:0;top:0;height:100%;width:0%;background:var(--gold);animation:loadline 1.6s var(--ease) forwards;}
+@keyframes loadline{to{width:100%;}}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:22px 0;transition:background .5s var(--ease),padding .4s var(--ease),border-color .5s;border-bottom:1px solid transparent;}
+.nav.scrolled{background:rgba(11,11,11,.72);backdrop-filter:blur(14px) saturate(140%);padding:14px 0;border-color:var(--line);}
+html[data-theme="light"] .nav.scrolled{background:rgba(246,241,231,.78);}
+.nav .container{display:flex;align-items:center;justify-content:space-between;gap:24px;}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-d);font-weight:800;font-size:18px;letter-spacing:.01em;}
+.logo .mark{width:32px;height:32px;object-fit:contain;flex:none;display:block;}
+.nav-links{display:flex;gap:34px;align-items:center;}
+.nav-links a{font-size:13.5px;font-weight:500;color:var(--ink-soft);position:relative;padding:4px 0;transition:color .3s;}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--gold);transition:width .35s var(--ease);}
+.nav-links a:hover{color:var(--ink);}
+.nav-links a:hover::after{width:100%;}
+.nav-right{display:flex;align-items:center;gap:16px;}
+.lang-switch{display:flex;gap:2px;background:var(--glass);border:1px solid var(--glass-brd);border-radius:100px;padding:3px;}
+.lang-switch button{padding:6px 11px;font-size:11.5px;font-weight:700;letter-spacing:.04em;border-radius:100px;color:var(--ink-faint);transition:all .35s var(--ease);}
+.lang-switch button.active{background:var(--gold);color:#171309;}
+.theme-toggle{width:38px;height:38px;border-radius:50%;border:1px solid var(--glass-brd);display:flex;align-items:center;justify-content:center;background:var(--glass);flex:none;}
+.theme-toggle svg{width:16px;height:16px;stroke:var(--ink-soft);}
+.nav-cta{display:none;}
+@media(min-width:900px){.nav-cta{display:inline-flex;}}
+.burger{display:flex;width:38px;height:38px;border-radius:50%;border:1px solid var(--glass-brd);align-items:center;justify-content:center;background:var(--glass);}
+.burger svg{width:16px;height:16px;stroke:var(--ink);}
+@media(min-width:900px){.nav-links{display:flex;}.burger{display:none;}}
+@media(max-width:899px){.nav-links{display:none;}}
+
+/* mobile drawer */
+.drawer{position:fixed;inset:0;background:rgba(10,10,10,.6);backdrop-filter:blur(6px);z-index:150;opacity:0;pointer-events:none;transition:opacity .4s var(--ease);}
+.drawer.open{opacity:1;pointer-events:auto;}
+.drawer-panel{position:absolute;top:0;right:0;height:100%;width:min(84vw,340px);background:var(--bg2);border-left:1px solid var(--line);padding:30px 28px;transform:translateX(100%);transition:transform .5s var(--ease);display:flex;flex-direction:column;gap:26px;}
+.drawer.open .drawer-panel{transform:translateX(0);}
+.drawer-panel a{font-family:var(--font-d);font-size:22px;font-weight:600;color:var(--ink);}
+.drawer-close{align-self:flex-end;width:34px;height:34px;border-radius:50%;border:1px solid var(--glass-brd);display:flex;align-items:center;justify-content:center;}
+.drawer-close svg{width:14px;height:14px;stroke:var(--ink);}
+
+/* ============================================================
+   HERO
+=============================================================== */
+#hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding-top:110px;}
+#hero-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;}
+.hero-scrim{position:absolute;inset:0;z-index:1;background:
+  radial-gradient(120% 90% at 50% 12%,rgba(212,175,55,.10),transparent 60%),
+  linear-gradient(180deg,rgba(11,11,11,.15) 0%,rgba(11,11,11,.55) 60%,#0B0B0B 100%);
+  pointer-events:none;
+}
+html[data-theme="light"] .hero-scrim{background:radial-gradient(120% 90% at 50% 12%,rgba(212,175,55,.16),transparent 60%),linear-gradient(180deg,rgba(246,241,231,.1) 0%,rgba(246,241,231,.6) 60%,#F6F1E7 100%);}
+.hero-inner{position:relative;z-index:2;text-align:center;padding:0 20px;}
+.hero-eyebrow{color:var(--gold-light);font-size:12.5px;letter-spacing:.3em;text-transform:uppercase;font-weight:600;margin-bottom:22px;opacity:.9;}
+.hero-title{font-size:clamp(2.8rem,10vw,7.2rem);line-height:.98;font-weight:800;color:var(--ink);}
+.hero-title .char{display:inline-block;opacity:0;transform:translateY(.5em) rotate(4deg);}
+.hero-title .char.apos{width:.25em;}
+.hero-sub{margin:26px auto 0;max-width:560px;font-family:var(--font-d);font-weight:500;font-size:clamp(1.05rem,2vw,1.4rem);color:var(--ink-soft);opacity:0;}
+.hero-ctas{display:flex;gap:16px;justify-content:center;margin-top:44px;flex-wrap:wrap;opacity:0;}
+.hero-words{position:absolute;inset:0;z-index:1;pointer-events:none;}
+.hero-word{position:absolute;font-family:var(--font-d);font-weight:700;color:var(--gold);opacity:0;letter-spacing:.06em;font-size:clamp(1.1rem,2.6vw,2.1rem);text-shadow:0 0 24px rgba(212,175,55,.5);}
+.scroll-cue{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:.7;}
+.scroll-cue .stick{width:1px;height:38px;background:linear-gradient(180deg,var(--gold),transparent);position:relative;overflow:hidden;}
+.scroll-cue .stick::after{content:"";position:absolute;top:-40%;left:0;width:100%;height:40%;background:var(--gold-light);animation:cue 1.8s ease-in-out infinite;}
+@keyframes cue{0%{top:-40%;}100%{top:100%;}}
+.scroll-cue span{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);}
+
+/* ============================================================
+   REVEAL utility
+=============================================================== */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .9s var(--ease),transform .9s var(--ease);}
+.reveal.in{opacity:1;transform:translateY(0);}
+.reveal-scale{opacity:0;transform:scale(.94);transition:opacity 1s var(--ease),transform 1s var(--ease);}
+.reveal-scale.in{opacity:1;transform:scale(1);}
+.stagger > *{transition-delay:calc(var(--i,0) * 90ms);}
+
+/* ============================================================
+   STORY / TIMELINE
+=============================================================== */
+#story{background:var(--bg2);}
+.story-grid{display:grid;grid-template-columns:1fr;gap:64px;}
+@media(min-width:920px){.story-grid{grid-template-columns:.9fr 1.1fr;align-items:start;}}
+.story-copy p{color:var(--ink-soft);font-size:1.05rem;line-height:1.85;margin-top:10px;}
+.story-copy .stat700{margin-top:34px;display:flex;align-items:baseline;gap:14px;}
+.story-copy .stat700 b{font-family:var(--font-d);font-size:3rem;color:var(--gold);}
+.story-copy .stat700 span{color:var(--ink-faint);font-size:13px;letter-spacing:.08em;text-transform:uppercase;}
+
+.timeline{position:relative;padding-left:34px;}
+.timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,var(--gold),var(--line) 90%);}
+.tl-item{position:relative;padding-bottom:44px;}
+.tl-item:last-child{padding-bottom:0;}
+.tl-item::before{content:"";position:absolute;left:-34px;top:4px;width:11px;height:11px;border-radius:50%;background:var(--bg2);border:2px solid var(--gold);}
+.tl-year{font-family:var(--font-d);color:var(--gold);font-weight:700;font-size:13px;letter-spacing:.08em;margin-bottom:6px;display:block;}
+.tl-title{font-family:var(--font-d);font-size:1.2rem;font-weight:700;color:var(--ink);}
+
+/* ============================================================
+   STATS
+=============================================================== */
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+@media(min-width:760px){.stats-grid{grid-template-columns:repeat(3,1fr);}}
+.stat-cell{background:var(--bg);padding:44px 28px;text-align:center;}
+.stat-num{font-family:var(--font-d);font-weight:800;font-size:clamp(2.2rem,4.4vw,3.4rem);color:var(--gold);line-height:1;}
+.stat-label{margin-top:12px;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);}
+
+/* ============================================================
+   WHY CHOOSE US
+=============================================================== */
+#why{background:var(--bg2);}
+.why-grid{display:grid;grid-template-columns:1fr;gap:1px;}
+@media(min-width:640px){.why-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1020px){.why-grid{grid-template-columns:repeat(3,1fr);}}
+.why-card{background:var(--bg);border:1px solid var(--line);padding:34px 30px;border-radius:var(--radius);position:relative;overflow:hidden;transition:border-color .4s,transform .4s var(--ease);}
+.why-card:hover{border-color:var(--line-strong);transform:translateY(-4px);}
+.why-card .icon{width:38px;height:38px;border-radius:50%;border:1px solid var(--line-strong);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+.why-card .icon svg{width:16px;height:16px;stroke:var(--gold);}
+.why-card h4{font-size:1.05rem;color:var(--ink);margin-bottom:8px;}
+.why-card p{font-size:.92rem;color:var(--ink-soft);line-height:1.6;}
+
+/* ============================================================
+   COURSES
+=============================================================== */
+.course-tabs{display:flex;gap:8px;margin-bottom:40px;flex-wrap:wrap;}
+.course-tab{padding:11px 22px;border-radius:100px;border:1px solid var(--line);font-size:13.5px;font-weight:600;color:var(--ink-soft);transition:all .35s var(--ease);}
+.course-tab.active{background:var(--gold);color:#171309;border-color:var(--gold);}
+.course-panels{position:relative;}
+.course-panel{display:none;}
+.course-panel.active{display:block;}
+.course-top{display:grid;grid-template-columns:1fr;gap:28px;margin-bottom:40px;}
+@media(min-width:760px){.course-top{grid-template-columns:1.1fr .9fr;}}
+.course-desc p{color:var(--ink-soft);font-size:1rem;line-height:1.8;}
+.format-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+.format-cell{background:var(--bg2);padding:22px 16px;text-align:center;}
+.format-cell b{display:block;font-family:var(--font-d);color:var(--gold);font-size:1rem;margin-bottom:6px;}
+.format-cell span{font-size:12px;color:var(--ink-faint);}
+.price-grid{display:grid;grid-template-columns:1fr;gap:18px;}
+@media(min-width:760px){.price-grid{grid-template-columns:repeat(3,1fr);}}
+.price-card{border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;background:linear-gradient(180deg,var(--glass),transparent);position:relative;transition:transform .4s var(--ease),border-color .4s;}
+.price-card:hover{transform:translateY(-6px);border-color:var(--line-strong);}
+.price-card.featured{border-color:var(--gold);box-shadow:0 20px 50px -20px rgba(212,175,55,.35);}
+.price-card .tag{position:absolute;top:-12px;right:24px;background:var(--gold);color:#171309;font-size:11px;font-weight:700;padding:5px 12px;border-radius:100px;letter-spacing:.04em;}
+.price-card h4{font-size:1rem;color:var(--ink-soft);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:12.5px;}
+.price-card .amount{font-family:var(--font-d);font-size:2rem;font-weight:800;color:var(--ink);margin:14px 0 4px;}
+.price-card .amount span{font-size:.9rem;color:var(--ink-faint);font-weight:500;}
+.feature-check{margin-top:60px;border:1px solid var(--line);border-radius:var(--radius);padding:36px 30px;background:var(--glass);}
+.feature-check-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 28px;}
+@media(min-width:700px){.feature-check-grid{grid-template-columns:repeat(4,1fr);}}
+.fc-item{display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--ink-soft);}
+.fc-item svg{width:15px;height:15px;stroke:var(--gold);flex:none;}
+
+/* ============================================================
+   BOOK
+=============================================================== */
+#book{background:var(--bg2);overflow:hidden;}
+.book-pin{display:grid;grid-template-columns:1fr;gap:56px;align-items:center;}
+@media(min-width:940px){.book-pin{grid-template-columns:.85fr 1.15fr;}}
+.book-stage{perspective:1600px;display:flex;justify-content:center;}
+.book-3d{width:220px;height:300px;position:relative;transform-style:preserve-3d;transform:rotateY(-24deg) rotateX(4deg);transition:transform .1s linear;}
+.book-cover,.book-back,.book-spine{position:absolute;inset:0;border-radius:4px 10px 10px 4px;background:linear-gradient(135deg,#171309,#0B0B0B 60%);border:1px solid var(--line-strong);box-shadow:0 40px 80px -30px rgba(0,0,0,.7);}
+.book-cover{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;backface-visibility:hidden;transform-origin:left center;transition:transform .1s linear;overflow:hidden;}
+.book-cover .cover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:4px 10px 10px 4px;}
+.book-cover .bmark{width:44px;height:44px;border-radius:50%;background:conic-gradient(from 180deg,var(--gold-light),var(--gold),var(--gold-deep),var(--gold-light));}
+.book-cover .btxt{font-family:var(--font-d);color:var(--gold-light);font-size:13px;letter-spacing:.14em;text-align:center;padding:0 20px;}
+.book-cover .bthread{position:absolute;left:6px;top:14px;bottom:14px;width:2px;background:linear-gradient(180deg,var(--gold-light),var(--gold));border-radius:2px;z-index:1;}
+.book-page{position:absolute;inset:4px 4px 4px 10px;border-radius:2px 8px 8px 2px;opacity:0;transition:opacity .5s;transform-style:preserve-3d;}
+.book-page.show{opacity:1;}
+.page-leaf{position:absolute;inset:0;background:#EFE7D5;border-radius:2px 8px 8px 2px;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;backface-visibility:hidden;transform-origin:left center;transition:transform .1s linear;box-shadow:2px 0 14px rgba(0,0,0,.18);}
+.page-leaf b{font-family:var(--font-d);color:#171309;font-size:15px;letter-spacing:.02em;}
+.book-copy .pages-list{margin-top:28px;display:flex;flex-direction:column;gap:2px;}
+.pl-item{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-family:var(--font-d);font-size:1.05rem;color:var(--ink-faint);transition:color .4s;}
+.pl-item.active{color:var(--gold);}
+.pl-item .n{font-size:12px;color:var(--ink-faint);width:24px;font-family:var(--font-b);}
+
+/* ============================================================
+   GLOBAL REACH
+=============================================================== */
+#global{position:relative;}
+.globe-wrap{display:flex;justify-content:center;align-items:center;padding:20px 0 10px;position:relative;}
+.globe-wrap::before{content:'';position:absolute;left:50%;top:50%;width:150%;height:150%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(212,175,55,.32) 0%,rgba(212,175,55,.14) 32%,rgba(212,175,55,0) 68%);filter:blur(36px);z-index:0;pointer-events:none;animation:globeGlowPulse 12s ease-in-out infinite;}
+@keyframes globeGlowPulse{0%,100%{opacity:.65;}50%{opacity:1;}}
+@media (prefers-reduced-motion: reduce){.globe-wrap::before{animation:none;opacity:.85;}}
+.globe{position:relative;z-index:1;width:min(420px,86vw);aspect-ratio:1/1;border-radius:50%;background:radial-gradient(circle at 32% 28%,rgba(212,175,55,.16),transparent 60%),var(--bg2);border:1px solid var(--line-strong);overflow:visible;}
+.globe canvas{position:absolute;inset:0;width:100%!important;height:100%!important;display:block;}
+.globe-tooltip{position:absolute;left:0;top:0;transform:translate(-50%,-150%);padding:7px 15px;background:rgba(11,11,11,.94);border:1px solid rgba(212,175,55,.4);border-radius:8px;pointer-events:none;opacity:0;transition:opacity .22s var(--ease),transform .22s var(--ease);z-index:6;box-shadow:0 10px 26px rgba(0,0,0,.35);text-align:center;}
+.globe-tooltip.show{opacity:1;transform:translate(-50%,-168%);}
+.globe-tooltip .gt-name{display:block;font-family:var(--font-d);font-size:12.5px;font-weight:600;letter-spacing:.04em;color:#F7F4EE;white-space:nowrap;}
+.globe-tooltip .gt-hub{display:none;font-family:var(--font-d);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-light);margin-top:2px;}
+.globe-tooltip.is-hub .gt-hub{display:block;}
+.globe-caption{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;margin-top:26px;}
+.gc-item{text-align:center;}
+.gc-item b{display:block;font-family:var(--font-d);color:var(--gold);font-size:1.3rem;}
+.gc-item span{font-size:11.5px;color:var(--ink-faint);letter-spacing:.06em;text-transform:uppercase;}
+
+/* ============================================================
+   PLACEMENT TEST
+=============================================================== */
+#placement .test-card{max-width:640px;margin:0 auto;border:1px solid var(--line);border-radius:var(--radius-l);padding:44px;background:linear-gradient(180deg,var(--glass),transparent);}
+.test-progress{height:3px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:34px;}
+.test-progress-fill{height:100%;width:0%;background:var(--gold);transition:width .5s var(--ease);}
+.test-q{font-family:var(--font-d);font-size:1.25rem;color:var(--ink);margin-bottom:26px;min-height:64px;}
+.test-opts{display:flex;flex-direction:column;gap:12px;}
+.test-opt{text-align:left;padding:16px 20px;border:1px solid var(--line);border-radius:var(--radius-s);color:var(--ink-soft);font-size:14.5px;transition:all .3s var(--ease);}
+.test-opt:hover{border-color:var(--line-strong);background:var(--glass);}
+.test-opt.correct{border-color:var(--gold);background:rgba(212,175,55,.1);color:var(--ink);}
+.test-opt.wrong{border-color:rgba(200,80,80,.5);opacity:.5;}
+.test-result{text-align:center;display:none;}
+.test-result.show{display:block;}
+.test-result .lvl{font-family:var(--font-d);font-size:3rem;color:var(--gold);font-weight:800;margin:16px 0;}
+.test-foot{margin-top:30px;text-align:center;}
+
+/* ============================================================
+   RESULTS / CERTIFICATES
+=============================================================== */
+.cert-wall{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+@media(min-width:700px){.cert-wall{grid-template-columns:repeat(4,1fr);}}
+.cert-card{border:1px solid var(--line-strong);border-radius:var(--radius);padding:26px 18px;text-align:center;background:linear-gradient(160deg,rgba(212,175,55,.09),transparent 60%);transition:transform .5s var(--ease);}
+.cert-card:nth-child(even){transform:translateY(18px);}
+.cert-card:hover{transform:translateY(-6px) rotate(-1deg);}
+.cert-card .seal{width:46px;height:46px;margin:0 auto 14px;border-radius:50%;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--font-d);color:var(--gold);font-weight:700;font-size:12px;}
+.cert-card b{display:block;font-family:var(--font-d);color:var(--ink);font-size:1.15rem;}
+.cert-card span{font-size:11.5px;color:var(--ink-faint);letter-spacing:.05em;text-transform:uppercase;}
+
+/* ============================================================
+   GALLERY
+=============================================================== */
+#gallery{background:var(--bg2);}
+.cert-photo-wall{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+@media(min-width:700px){.cert-photo-wall{grid-template-columns:repeat(4,1fr);}}
+.cert-photo{border:1px solid var(--line-strong);border-radius:var(--radius);overflow:hidden;background:linear-gradient(160deg,rgba(212,175,55,.09),transparent 60%);transition:transform .5s var(--ease);}
+.cert-photo:nth-child(even){transform:translateY(18px);}
+.cert-photo:hover{transform:translateY(-6px) rotate(-1deg);}
+.cert-photo img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;object-position:top center;border-bottom:1px solid var(--line);}
+.cert-photo-tag{padding:14px 10px;text-align:center;}
+.cert-photo-tag b{display:block;font-family:var(--font-d);color:var(--ink);font-size:1.05rem;}
+.cert-photo-tag span{font-size:10.5px;color:var(--ink-faint);letter-spacing:.05em;text-transform:uppercase;}
+.cert-stat-row{margin-top:40px;text-align:center;}
+.cert-stat-row b{display:block;font-family:var(--font-d);color:var(--gold);font-size:2.4rem;}
+.cert-stat-row span{font-size:12px;color:var(--ink-faint);letter-spacing:.05em;text-transform:uppercase;}
+.masonry{columns:2 220px;column-gap:16px;}
+@media(min-width:760px){.masonry{columns:3 260px;}}
+.mason-item{break-inside:avoid;margin-bottom:16px;border-radius:var(--radius);overflow:hidden;position:relative;border:1px solid var(--line);}
+.mason-item .art{width:100%;aspect-ratio:var(--ar,4/5);background:var(--g);position:relative;overflow:hidden;}
+.mason-item .art::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(115deg,rgba(212,175,55,.08) 0 2px,transparent 2px 26px);}
+.mason-item .cap{position:absolute;left:0;right:0;bottom:0;padding:16px 18px;background:linear-gradient(0deg,rgba(0,0,0,.55),transparent);font-family:var(--font-d);color:#fff;font-size:13px;letter-spacing:.03em;}
+.mason-item{transform:translateY(28px);opacity:0;transition:transform .9s var(--ease),opacity .9s var(--ease);}
+.mason-item.in{transform:translateY(0);opacity:1;}
+
+/* ============================================================
+   TEACHERS
+=============================================================== */
+.teach-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+@media(min-width:640px){.teach-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:980px){.teach-grid{grid-template-columns:repeat(4,1fr);}}
+.teach-cell{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .5s var(--ease),border-color .5s var(--ease);}
+.teach-cell:hover{transform:translateY(-6px);border-color:var(--gold);}
+.teach-cell .photo{position:relative;aspect-ratio:3/4;background:var(--g,linear-gradient(150deg,#1c1a14,#0b0b0b));display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.teach-cell .photo::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(115deg,rgba(212,175,55,.08) 0 2px,transparent 2px 26px);}
+.teach-cell .initials{position:relative;z-index:1;font-family:var(--font-d);font-weight:800;font-size:2.6rem;color:var(--gold);letter-spacing:.02em;}
+.teach-cell .photo img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:top center;}
+.teach-cell .play{position:absolute;top:16px;right:16px;width:38px;height:38px;border-radius:50%;background:var(--ink);display:flex;align-items:center;justify-content:center;z-index:2;cursor:pointer;transition:transform .3s var(--ease);border:none;padding:0;}
+.teach-cell .play:hover{transform:scale(1.08);}
+.teach-cell .play svg{width:12px;height:12px;fill:var(--bg);margin-left:2px;}
+.teach-cell .info{padding:20px 20px 22px;text-align:left;}
+.teach-cell h4{font-family:var(--font-d);color:var(--ink);font-size:1.05rem;font-weight:700;margin-bottom:4px;line-height:1.3;}
+.teach-cell .role{color:var(--gold);font-size:12.5px;font-weight:700;letter-spacing:.03em;margin-bottom:14px;}
+.teach-cell .badges{display:flex;flex-wrap:wrap;gap:8px;}
+.teach-cell .badges span{border:1px solid var(--line);border-radius:100px;padding:5px 12px;font-size:11px;color:var(--ink-soft);letter-spacing:.02em;white-space:nowrap;}
+
+/* ============================================================
+   NEWS
+=============================================================== */
+#news{background:var(--bg2);}
+.news-grid{display:grid;grid-template-columns:1fr;gap:24px;}
+@media(min-width:760px){.news-grid{grid-template-columns:repeat(3,1fr);}}
+.news-card{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .4s var(--ease),border-color .4s;}
+.news-card:hover{transform:translateY(-6px);border-color:var(--line-strong);}
+.news-card .art{aspect-ratio:16/11;background:var(--g);position:relative;}
+.news-card .art::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(70deg,rgba(212,175,55,.1) 0 2px,transparent 2px 22px);}
+.news-body{padding:22px 22px 26px;}
+.news-date{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:block;}
+.news-card h4{font-size:1.08rem;color:var(--ink);margin-bottom:8px;line-height:1.35;}
+.news-card p{font-size:.88rem;color:var(--ink-soft);line-height:1.6;}
+
+/* ============================================================
+   FAQ
+=============================================================== */
+.faq-item{border-bottom:1px solid var(--line);}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:26px 0;text-align:left;font-family:var(--font-d);font-size:1.05rem;color:var(--ink);gap:20px;}
+.faq-q .plus{width:26px;height:26px;border-radius:50%;border:1px solid var(--line-strong);flex:none;position:relative;}
+.faq-q .plus::before,.faq-q .plus::after{content:"";position:absolute;background:var(--gold);left:50%;top:50%;transform:translate(-50%,-50%);}
+.faq-q .plus::before{width:10px;height:1px;}
+.faq-q .plus::after{width:1px;height:10px;transition:transform .35s var(--ease);}
+.faq-item.open .plus::after{transform:translate(-50%,-50%) rotate(90deg) scale(0);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease);}
+.faq-a p{color:var(--ink-soft);font-size:.95rem;line-height:1.75;padding-bottom:24px;max-width:680px;}
+
+/* ============================================================
+   CONTACT
+=============================================================== */
+#contact{background:var(--bg2);}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:48px;}
+@media(min-width:940px){.contact-grid{grid-template-columns:.85fr 1.15fr;}}
+.contact-info-item{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);}
+.contact-info-item .ic{width:38px;height:38px;border-radius:50%;border:1px solid var(--line-strong);display:flex;align-items:center;justify-content:center;flex:none;}
+.contact-info-item .ic svg{width:16px;height:16px;stroke:var(--gold);}
+.contact-info-item b{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:4px;}
+.contact-info-item span,.contact-info-item a{font-size:15px;color:var(--ink);}
+.contact-map{display:block;border:1px solid var(--line);border-radius:var(--radius);min-height:280px;position:relative;overflow:hidden;background:
+  radial-gradient(circle at 62% 40%,rgba(212,175,55,.14),transparent 55%),var(--bg);
+  cursor:pointer;transition:transform .3s var(--ease),filter .3s var(--ease),border-color .3s var(--ease);}
+.contact-map:hover{transform:scale(1.02);filter:brightness(1.08);border-color:var(--line-strong);}
+.contact-map svg{position:absolute;inset:0;width:100%;height:100%;}
+.map-pin-label{position:absolute;left:62%;top:40%;transform:translate(-50%,-140%);text-align:center;}
+.map-pin-label b{font-family:var(--font-d);color:var(--gold);font-size:13px;display:block;}
+.map-pin-label span{font-size:11px;color:var(--ink-faint);}
+.contact-map::after{content:'';position:absolute;left:62%;top:40%;width:14px;height:14px;margin:-7px 0 0 -7px;
+  border-radius:50%;border:1px solid var(--gold-light);opacity:0;pointer-events:none;}
+.contact-map:hover::after{animation:mapRipple 1.4s var(--ease) infinite;}
+@keyframes mapRipple{0%{transform:scale(1);opacity:.55;}100%{transform:scale(7);opacity:0;}}
+@media(prefers-reduced-motion:reduce){.contact-map:hover::after{animation:none;}}
+.map-open-badge{position:absolute;right:14px;bottom:14px;display:inline-flex;align-items:center;gap:6px;
+  padding:8px 14px;border-radius:100px;background:rgba(11,11,11,.82);border:1px solid var(--line-strong);
+  color:var(--ink);font-family:var(--font-b);font-size:12px;font-weight:600;letter-spacing:.01em;
+  opacity:0;transform:translateY(6px);transition:opacity .3s var(--ease),transform .3s var(--ease);
+  pointer-events:none;backdrop-filter:blur(6px);z-index:3;}
+html[data-theme="light"] .map-open-badge{background:rgba(246,241,231,.9);}
+.contact-map:hover .map-open-badge{opacity:1;transform:translateY(0);}
+.form-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:8px;}
+@media(min-width:600px){.form-grid{grid-template-columns:1fr 1fr;}}
+.form-grid .full{grid-column:1/-1;}
+.field{display:flex;flex-direction:column;gap:8px;}
+.field label{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-faint);}
+.field input,.field select,.field textarea{background:var(--glass);border:1px solid var(--line);border-radius:var(--radius-s);padding:14px 16px;color:var(--ink);font-family:var(--font-b);font-size:14.5px;transition:border-color .3s;}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);}
+.form-note{font-size:12px;color:var(--ink-faint);margin-top:14px;}
+.form-success{display:none;text-align:center;padding:40px 0;}
+.form-success.show{display:block;}
+.form-success .tick{width:56px;height:56px;border-radius:50%;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;}
+.form-success .tick svg{width:22px;height:22px;stroke:var(--gold);}
+
+/* ============================================================
+   FOOTER + floating CTA
+=============================================================== */
+footer{padding:70px 0 34px;border-top:1px solid var(--line);}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:40px;margin-bottom:50px;}
+.foot-brand p{max-width:280px;color:var(--ink-soft);font-size:.9rem;margin-top:14px;line-height:1.7;}
+.foot-cols{display:flex;gap:60px;flex-wrap:wrap;}
+.foot-col b{display:block;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:16px;}
+.foot-col ul{display:flex;flex-direction:column;gap:10px;}
+.foot-col a{font-size:14px;color:var(--ink-soft);transition:color .3s;}
+.foot-col a:hover{color:var(--gold);}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink-faint);}
+.foot-social{display:flex;gap:14px;}
+.foot-social a{width:34px;height:34px;border-radius:50%;border:1px solid var(--glass-brd);display:flex;align-items:center;justify-content:center;}
+.foot-social svg{width:14px;height:14px;stroke:var(--ink-soft);}
+
+.floating-cta{position:fixed;right:22px;bottom:22px;z-index:90;display:flex;flex-direction:column;align-items:flex-end;gap:12px;opacity:0;transform:translateY(20px);transition:opacity .5s var(--ease),transform .5s var(--ease);pointer-events:none;}
+.floating-cta.show{opacity:1;transform:translateY(0);pointer-events:auto;}
+.fab{width:52px;height:52px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px -8px rgba(212,175,55,.6);}
+.fab svg{width:22px;height:22px;stroke:#171309;}
+.floating-cta .btn-sm-icon{display:none;width:20px;height:20px;stroke:#171309;flex:none;}
+@media(max-width:640px){
+  .floating-cta .btn-sm-label{display:none;}
+  .floating-cta a.btn.btn-sm{width:52px;height:52px;padding:0;border-radius:50%;}
+  .floating-cta .btn-sm-icon{display:block;}
+}
+
+[data-magnetic]{will-change:transform;}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;}
+}
+.video-lightbox{position:fixed;inset:0;background:#000;z-index:9999;display:none;align-items:center;justify-content:center;}
+.video-lightbox.open{display:flex;}
+.video-lightbox video{width:100%;height:100%;object-fit:contain;background:#000;}
+.vl-btn{position:absolute;top:20px;z-index:10000;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.5);color:#fff;font-family:var(--font-d);font-size:14px;letter-spacing:.03em;border-radius:999px;padding:10px 18px;cursor:pointer;display:flex;align-items:center;gap:8px;backdrop-filter:blur(6px);transition:background .3s ease,border-color .3s ease;}
+.vl-btn:hover{background:rgba(212,175,55,.25);border-color:var(--gold,#d4af37);}
+.vl-back{left:20px;}
+.vl-volume{right:20px;padding:10px 14px;}
+</style>
+</head>
+<body>
+
+<div id="preloader"><div class="preload-mark">Nurik's Academy</div><div class="preload-line"></div></div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="scrollbar-top" id="scrollTop"></div>
+<div class="thread-rail"><div class="thread-track"></div><div class="thread-fill" id="threadFill"></div></div>
+
+<!-- NAV -->
+<header class="nav" id="siteNav">
+  <div class="container">
+    <a href="#hero" class="logo"><img class="mark" src="assets/image_02.png" alt="Nurik's Academy logo"><span data-i18n="brand">Nurik's Academy</span></a>
+    <nav class="nav-links">
+      <a href="#story" data-i18n="nav.story">Story</a>
+      <a href="#courses" data-i18n="nav.courses">Courses</a>
+      <a href="#book" data-i18n="nav.book">The Book</a>
+      <a href="#results" data-i18n="nav.results">Results</a>
+      <a href="#teachers" data-i18n="nav.teachers">Teachers</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch" id="langSwitch">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="ru">RU</button>
+        <button data-lang="uz">UZ</button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-gold btn-sm nav-cta" data-magnetic data-i18n="nav.cta">Book a Free Lesson</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <div class="drawer-panel">
+    <button class="drawer-close" id="drawerClose"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <a href="#story" data-i18n="nav.story">Story</a>
+    <a href="#courses" data-i18n="nav.courses">Courses</a>
+    <a href="#book" data-i18n="nav.book">The Book</a>
+    <a href="#results" data-i18n="nav.results">Results</a>
+    <a href="#teachers" data-i18n="nav.teachers">Teachers</a>
+    <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </div>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-scrim"></div>
+  <div class="hero-words" id="heroWords"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow" data-i18n="hero.eyebrow">Fergana's Premium English Academy</div>
+    <h1 class="hero-title" id="heroTitle" aria-label="Nurik's Academy"></h1>
+    <p class="hero-sub" id="heroSub" data-i18n="hero.sub">Learn English with Confidence.</p>
+    <div class="hero-ctas" id="heroCtas">
+      <a href="#contact" class="btn btn-gold" data-magnetic data-i18n="hero.cta1">Book a Free Lesson</a>
+      <a href="#placement" class="btn btn-ghost" data-magnetic data-i18n="hero.cta2">Take Placement Test</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><div class="stick"></div><span data-i18n="hero.scroll">Scroll</span></div>
+</section>
+
+<!-- STORY -->
+<section id="story" class="section">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-copy reveal">
+        <div class="eyebrow" data-i18n="story.eyebrow">Our Story</div>
+        <h2 class="h2" data-i18n="story.title">Every fluent sentence starts <em>somewhere.</em></h2>
+        <p data-i18n="story.p1">We opened Nurik's Academy to help people achieve their dreams through English.</p>
+        <p data-i18n="story.p2">Whether the goal is university, career or international communication, we guide every student with structured lessons, expert teachers and constant support.</p>
+        <div class="stat700"><b data-count="700" data-suffix="+">0+</b><span data-i18n="story.grads">Graduates and counting</span></div>
+      </div>
+      <div class="timeline reveal">
+        <div class="tl-item"><span class="tl-year">2024</span><span class="tl-title" data-i18n="story.t1">Academy opens its doors</span></div>
+        <div class="tl-item"><span class="tl-year">2024–25</span><span class="tl-title" data-i18n="story.t2">Students join every month</span></div>
+        <div class="tl-item"><span class="tl-year">→</span><span class="tl-title" data-i18n="story.t3">Confidence grows, lesson by lesson</span></div>
+        <div class="tl-item"><span class="tl-year">→</span><span class="tl-title" data-i18n="story.t4">English becomes part of daily life</span></div>
+        <div class="tl-item"><span class="tl-year">Today</span><span class="tl-title" data-i18n="story.t5">700+ graduates carry it forward</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats" class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="stats-grid reveal">
+      <div class="stat-cell"><div class="stat-num"><span data-count="2" data-suffix="+">0+</span></div><div class="stat-label" data-i18n="stats.s1">Years of Experience</div></div>
+      <div class="stat-cell"><div class="stat-num"><span data-count="700" data-suffix="+">0+</span></div><div class="stat-label" data-i18n="stats.s2">Graduates</div></div>
+      <div class="stat-cell"><div class="stat-num"><span data-count="7" data-suffix="+">0+</span></div><div class="stat-label" data-i18n="stats.s3">Teachers</div></div>
+      <div class="stat-cell"><div class="stat-num"><span data-count="500" data-suffix="+">0+</span></div><div class="stat-label" data-i18n="stats.s4">Active Students</div></div>
+      <div class="stat-cell"><div class="stat-num">IELTS <span data-count="8" data-decimal="1" data-suffix="+">0+</span></div><div class="stat-label" data-i18n="stats.s5">Highest Student Score</div></div>
+      <div class="stat-cell"><div class="stat-num">CEFR C1</div><div class="stat-label" data-i18n="stats.s6">Student Achievement</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why" class="section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" data-i18n="why.eyebrow">Why Choose Us</div>
+      <h2 class="h2" data-i18n="why.title">Structured for real <em>progress.</em></h2>
+    </div>
+    <div class="why-grid stagger">
+      <div class="why-card reveal" style="--i:0"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><h4 data-i18n="why.c1t">6 Lessons Every Week</h4><p data-i18n="why.c1p">Three with your main teacher, three with a dedicated support teacher.</p></div>
+      <div class="why-card reveal" style="--i:1"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12a4 4 0 118 0 4 4 0 01-8 0zM12 16v4M9 20h6"/></svg></div><h4 data-i18n="why.c2t">Speaking Club</h4><p data-i18n="why.c2p">Dedicated speaking practice every week, in a relaxed setting.</p></div>
+      <div class="why-card reveal" style="--i:2"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V6a2 2 0 012-2h13v15H6a2 2 0 000 4h13"/></svg></div><h4 data-i18n="why.c3t">British Council Methodology</h4><p data-i18n="why.c3p">Teachers trained according to British Council standards.</p></div>
+      <div class="why-card reveal" style="--i:3"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div><h4 data-i18n="why.c4t">CELTA-Based Teaching</h4><p data-i18n="why.c4p">Modern, communicative teaching methods that build real fluency.</p></div>
+      <div class="why-card reveal" style="--i:4"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><h4 data-i18n="why.c5t">Coursebook &amp; Workbook</h4><p data-i18n="why.c5p">Every student receives a full coursebook and workbook set.</p></div>
+      <div class="why-card reveal" style="--i:5"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h4 data-i18n="why.c6t">Mobile Application</h4><p data-i18n="why.c6p">Practice, homework and progress tracking in the academy app.</p></div>
+      <div class="why-card reveal" style="--i:6"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 6.4L21 11l-6.6 2.6L12 20l-2.4-6.4L3 11l6.6-2.6L12 2z"/></svg></div><h4 data-i18n="why.c7t">Individual Support</h4><p data-i18n="why.c7p">Personal attention to your goals, pace and weak points.</p></div>
+      <div class="why-card reveal" style="--i:7"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l9-6 9 6v11M9 21v-6h6v6"/></svg></div><h4 data-i18n="why.c8t">Modern Classrooms</h4><p data-i18n="why.c8p">Comfortable, well-lit spaces designed for focus.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="courses.eyebrow">Courses</div>
+      <h2 class="h2" data-i18n="courses.title">Choose your <em>path.</em></h2>
+    </div>
+    <div class="course-tabs reveal" id="courseTabs">
+      <button class="course-tab active" data-tab="general" data-i18n="courses.t1">General English</button>
+      <button class="course-tab" data-tab="ielts" data-i18n="courses.t2">IELTS</button>
+      <button class="course-tab" data-tab="cefr" data-i18n="courses.t3">CEFR</button>
+      <button class="course-tab" data-tab="kids" data-i18n="courses.t4">Kids English</button>
+    </div>
+
+    <div class="course-panels reveal">
+      <div class="course-panel active" data-panel="general">
+        <div class="course-top">
+          <div class="course-desc"><p data-i18n="courses.gd">Build real-world communication skills with a structured, level-based programme — grammar, vocabulary and speaking practice woven into every lesson.</p></div>
+          <div class="format-row">
+            <div class="format-cell"><b data-i18n="fmt.group">Group</b><span data-i18n="fmt.groupd">14 students · 90 min</span></div>
+            <div class="format-cell"><b data-i18n="fmt.mini">Mini Group</b><span data-i18n="fmt.minid">4 students · 60 min</span></div>
+            <div class="format-cell"><b data-i18n="fmt.ind">Individual</b><span data-i18n="fmt.indd">1 student · 60 min</span></div>
+          </div>
+        </div>
+        <div class="price-grid">
+          <div class="price-card featured"><span class="tag" data-i18n="courses.popular">Most Popular</span><h4 data-i18n="fmt.group">Group</h4><div class="amount">450,000 <span>UZS/mo</span></div></div>
+          <div class="price-card"><h4 data-i18n="fmt.mini">Mini Group</h4><div class="amount">600,000 <span>UZS/mo</span></div></div>
+          <div class="price-card"><h4 data-i18n="fmt.ind">Individual</h4><div class="amount">1,200,000 <span>UZS/mo</span></div></div>
+        </div>
+      </div>
+
+      <div class="course-panel" data-panel="ielts">
+        <div class="course-top">
+          <div class="course-desc"><p data-i18n="courses.id">Focused preparation across all four IELTS skills, with exam strategy, timed practice tests and detailed feedback from certified teachers.</p></div>
+          <div class="format-row">
+            <div class="format-cell"><b data-i18n="fmt.group">Group</b><span data-i18n="fmt.groupd">14 students · 90 min</span></div>
+            <div class="format-cell"><b data-i18n="fmt.mini">Mini Group</b><span data-i18n="fmt.minid">4 students · 60 min</span></div>
+            <div class="format-cell"><b data-i18n="fmt.ind">Individual</b><span data-i18n="fmt.indd">1 student · 60 min</span></div>
+          </div>
+        </div>
+        <div class="price-grid">
+          <div class="price-card featured"><span class="tag" data-i18n="courses.popular">Most Popular</span><h4 data-i18n="fmt.group">Group</h4><div class="amount">550,000 <span>UZS/mo</span></div></div>
+          <div class="price-card"><h4 data-i18n="fmt.mini">Mini Group</h4><div class="amount">750,000 <span>UZS/mo</span></div></div>
+          <div class="price-card"><h4 data-i18n="fmt.ind">Individual</h4><div class="amount">1,400,000 <span>UZS/mo</span></div></div>
+        </div>
+      </div>
+
+      <div class="course-panel" data-panel="cefr">
+        <div class="course-top">
+          <div class="course-desc"><p data-i18n="courses.cd">A CEFR-aligned track that maps every lesson to A1–C1 outcomes, so progress is always visible and internationally recognised.</p></div>
+          <div class="format-row">
+            <div class="format-cell"><b data-i18n="fmt.group">Group</b><span data-i18n="fmt.groupd">14 students · 90 min</span></div>
+            <div class="format-cell"><b data-i18n="fmt.mini">Mini Group</b><span data-i18n="fmt.minid">4 students · 60 min</span></div>
+            <div class="format-cell"><b data-i18n="fmt.ind">Individual</b><span data-i18n="fmt.indd">1 student · 60 min</span></div>
+          </div>
+        </div>
+        <div class="price-grid">
+          <div class="price-card featured"><span class="tag" data-i18n="courses.popular">Most Popular</span><h4 data-i18n="fmt.group">Group</h4><div class="amount">550,000 <span>UZS/mo</span></div></div>
+          <div class="price-card"><h4 data-i18n="fmt.mini">Mini Group</h4><div class="amount">750,000 <span>UZS/mo</span></div></div>
+          <div class="price-card"><h4 data-i18n="fmt.ind">Individual</h4><div class="amount">1,400,000 <span>UZS/mo</span></div></div>
+        </div>
+      </div>
+
+      <div class="course-panel" data-panel="kids">
+        <div class="course-top">
+          <div class="course-desc"><p data-i18n="courses.kd">A playful, confidence-first programme for younger learners — songs, games and stories that make English a habit, not homework.</p></div>
+          <div class="format-row">
+            <div class="format-cell"><b data-i18n="fmt.group">Group</b><span data-i18n="fmt.groupd">14 students · 90 min</span></div>
+            <div class="format-cell"><b data-i18n="fmt.mini">Mini Group</b><span data-i18n="fmt.minid">4 students · 60 min</span></div>
+            <div class="format-cell"><b data-i18n="fmt.ind">Individual</b><span data-i18n="fmt.indd">1 student · 60 min</span></div>
+          </div>
+        </div>
+        <div class="price-grid">
+          <div class="price-card featured"><span class="tag" data-i18n="courses.popular">Most Popular</span><h4 data-i18n="fmt.group">Group</h4><div class="amount">450,000 <span>UZS/mo</span></div></div>
+          <div class="price-card"><h4 data-i18n="fmt.mini">Mini Group</h4><div class="amount">600,000 <span>UZS/mo</span></div></div>
+          <div class="price-card"><h4 data-i18n="fmt.ind">Individual</h4><div class="amount">1,200,000 <span>UZS/mo</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-check reveal">
+      <div class="feature-check-grid">
+        <div class="fc-item"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="fc.1">24 lessons / month</span></div>
+        <div class="fc-item"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="fc.2">6 lessons / week</span></div>
+        <div class="fc-item"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="fc.3">Speaking Club</span></div>
+        <div class="fc-item"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="fc.4">Support Teacher</span></div>
+        <div class="fc-item"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="fc.5">Coursebook</span></div>
+        <div class="fc-item"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="fc.6">Workbook</span></div>
+        <div class="fc-item"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="fc.7">Academy Mobile App</span></div>
+        <div class="fc-item"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="fc.8">Individual Support</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section id="book" class="section">
+  <div class="container">
+    <div class="book-pin">
+      <div class="book-stage">
+        <div class="book-3d" id="book3d">
+          <div class="book-back"></div>
+          <div class="book-page" id="bookPage">
+            <div class="page-leaf" data-page="0" style="z-index:66"><b data-i18n="book.pg1">Speaking Club</b></div>
+            <div class="page-leaf" data-page="1" style="z-index:65"><b data-i18n="book.pg2">Support Teacher</b></div>
+            <div class="page-leaf" data-page="2" style="z-index:64"><b data-i18n="book.pg3">Workbook</b></div>
+            <div class="page-leaf" data-page="3" style="z-index:63"><b data-i18n="book.pg4">Guided Practice</b></div>
+            <div class="page-leaf" data-page="4" style="z-index:62"><b data-i18n="book.pg5">IELTS Strategy</b></div>
+            <div class="page-leaf" data-page="5" style="z-index:61"><b data-i18n="book.pg6">Confidence</b></div>
+          </div>
+          <div class="book-cover" id="bookCover">
+            <img class="cover-img" src="assets/image_03.jpg" alt="Nurik's Academy Beginner Coursebook cover">
+          </div>
+        </div>
+      </div>
+      <div class="book-copy reveal">
+        <div class="eyebrow" data-i18n="book.eyebrow">The Academy Handbook</div>
+        <h2 class="h2" data-i18n="book.title">One book. <em>Every benefit.</em></h2>
+        <p class="lede" data-i18n="book.p">Scroll to open it — every page of the Nurik's Academy experience, bound by the same golden thread that runs through everything we teach.</p>
+        <div class="pages-list" id="pagesList">
+          <div class="pl-item" data-page="0"><span class="n">01</span><span data-i18n="book.pg1">Speaking Club</span></div>
+          <div class="pl-item" data-page="1"><span class="n">02</span><span data-i18n="book.pg2">Support Teacher</span></div>
+          <div class="pl-item" data-page="2"><span class="n">03</span><span data-i18n="book.pg3">Workbook</span></div>
+          <div class="pl-item" data-page="3"><span class="n">04</span><span data-i18n="book.pg4">Guided Practice</span></div>
+          <div class="pl-item" data-page="4"><span class="n">05</span><span data-i18n="book.pg5">IELTS Strategy</span></div>
+          <div class="pl-item" data-page="5"><span class="n">06</span><span data-i18n="book.pg6">Confidence</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL REACH -->
+<section id="global" class="section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" data-i18n="global.eyebrow">Global Reach</div>
+      <h2 class="h2" data-i18n="global.title">From Fergana to the <em>world.</em></h2>
+    </div>
+    <div class="globe-wrap reveal-scale">
+      <div class="globe" id="globe">
+        <canvas id="globeCanvas"></canvas>
+        <div class="globe-tooltip" id="globeTooltip">
+          <span class="gt-name" id="globeTooltipName"></span>
+          <span class="gt-hub" id="globeTooltipHub">Primary Hub</span>
+        </div>
+      </div>
+    </div>
+    <div class="globe-caption reveal">
+      <div class="gc-item"><b>UK</b><span data-i18n="global.dest">Study Destination</span></div>
+      <div class="gc-item"><b>USA</b><span data-i18n="global.dest">Study Destination</span></div>
+      <div class="gc-item"><b>Uzbekistan</b><span data-i18n="global.home">Home Academy</span></div>
+      <div class="gc-item"><b>Turkey</b><span data-i18n="global.dest">Study Destination</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLACEMENT TEST -->
+<section id="placement" class="section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" data-i18n="placement.eyebrow">Placement Test</div>
+      <h2 class="h2" data-i18n="placement.title">Find your <em>level.</em></h2>
+      <p class="lede" data-i18n="placement.lede">Three quick questions — a taste of the full assessment our academy uses for every new student.</p>
+    </div>
+    <div class="test-card reveal-scale" style="text-align:center;">
+      <a href="https://nuriksacademy.netlify.app" target="_blank" rel="noopener" class="btn btn-gold btn-sm" data-magnetic data-i18n="placement.cta">Take Placement Test</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section id="results" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="results.eyebrow">Student Results</div>
+      <h2 class="h2" data-i18n="results.title">Proof, not <em>promises.</em></h2>
+    </div>
+    <div class="cert-photo-wall stagger">
+      <div class="cert-photo reveal" style="--i:0"><img src="assets/image_04.jpg" alt="B2 English proficiency certificate"><div class="cert-photo-tag"><b>B2</b><span data-i18n="results.upperint">Upper-Intermediate</span></div></div>
+      <div class="cert-photo reveal" style="--i:1"><img src="assets/image_05.jpg" alt="B2 English proficiency certificate"><div class="cert-photo-tag"><b>B2</b><span data-i18n="results.upperint">Upper-Intermediate</span></div></div>
+      <div class="cert-photo reveal" style="--i:2"><img src="assets/image_06.jpg" alt="IELTS 8.0 test report form"><div class="cert-photo-tag"><b>8.0</b><span data-i18n="results.overall">Overall Band</span></div></div>
+      <div class="cert-photo reveal" style="--i:3"><img src="assets/image_07.jpg" alt="C1 English proficiency certificate"><div class="cert-photo-tag"><b>C1</b><span data-i18n="results.adv">Advanced</span></div></div>
+      <div class="cert-photo reveal" style="--i:4"><img src="assets/image_08.jpg" alt="B2 English proficiency certificate"><div class="cert-photo-tag"><b>B2</b><span data-i18n="results.upperint">Upper-Intermediate</span></div></div>
+      <div class="cert-photo reveal" style="--i:5"><img src="assets/image_09.jpg" alt="B2 English proficiency certificate"><div class="cert-photo-tag"><b>B2</b><span data-i18n="results.upperint">Upper-Intermediate</span></div></div>
+      <div class="cert-photo reveal" style="--i:6"><img src="assets/image_10.jpg" alt="B2 English proficiency certificate"><div class="cert-photo-tag"><b>B2</b><span data-i18n="results.upperint">Upper-Intermediate</span></div></div>
+      <div class="cert-photo reveal" style="--i:7"><img src="assets/image_11.jpg" alt="IELTS 7.5 test report form"><div class="cert-photo-tag"><b>7.5</b><span data-i18n="results.overall">Overall Band</span></div></div>
+      <div class="cert-photo reveal" style="--i:8"><img src="assets/image_12.jpg" alt="IELTS 7.5 test report form"><div class="cert-photo-tag"><b>7.5</b><span data-i18n="results.overall">Overall Band</span></div></div>
+      <div class="cert-photo reveal" style="--i:9"><img src="assets/image_13.jpg" alt="IELTS 7.0 test report form"><div class="cert-photo-tag"><b>7.0</b><span data-i18n="results.overall">Overall Band</span></div></div>
+      <div class="cert-photo reveal" style="--i:10"><img src="assets/image_14.jpg" alt="IELTS 8.0 test report form"><div class="cert-photo-tag"><b>8.0</b><span data-i18n="results.overall">Overall Band</span></div></div>
+      <div class="cert-photo reveal" style="--i:11"><img src="assets/image_15.jpg" alt="IELTS 7.0 test report form"><div class="cert-photo-tag"><b>7.0</b><span data-i18n="results.overall">Overall Band</span></div></div>
+      <div class="cert-photo reveal" style="--i:12"><img src="assets/image_16.jpg" alt="IELTS 7.0 test report form"><div class="cert-photo-tag"><b>7.0</b><span data-i18n="results.overall">Overall Band</span></div></div>
+      <div class="cert-photo reveal" style="--i:13"><img src="assets/image_17.jpg" alt="IELTS 7.0 test report form"><div class="cert-photo-tag"><b>7.0</b><span data-i18n="results.overall">Overall Band</span></div></div>
+    </div>
+    <div class="cert-stat-row reveal">
+      <b>700+</b>
+      <span data-i18n="results.grads">Graduates</span>
+      <span data-i18n="results.since" style="display:block;margin-top:2px;">Since 2024</span>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="gallery.eyebrow">Inside the Academy</div>
+      <h2 class="h2" data-i18n="gallery.title">A place worth <em>showing up to.</em></h2>
+    </div>
+    <div class="masonry">
+      <div class="mason-item" style="--ar:4/5"><video class="art gallery-video" src="assets/video_01.mp4" style="object-fit:cover;cursor:pointer" autoplay muted loop playsinline data-title="Modern Classrooms"></video><div class="cap" data-i18n="gallery.g1">Modern Classrooms</div></div>
+      <div class="mason-item" style="--ar:1/1"><div class="art" style="--g:linear-gradient(160deg,#20190f,#0b0b0b)"></div><div class="cap" data-i18n="gallery.g2">Speaking Club</div></div>
+      <div class="mason-item" style="--ar:3/4"><div class="art" style="--g:linear-gradient(150deg,#1e180d,#0b0b0b)"></div><div class="cap" data-i18n="gallery.g4">Workshops &amp; Events</div></div>
+      <div class="mason-item" style="--ar:4/5"><div class="art" style="--g:linear-gradient(160deg,#17150f,#0b0b0b)"></div><div class="cap" data-i18n="gallery.g5">Student Lounge</div></div>
+      <div class="mason-item" style="--ar:1/1"><div class="art" style="--g:linear-gradient(150deg,#1a160d,#0b0b0b)"></div><div class="cap" data-i18n="gallery.g6">Exam Preparation</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHERS -->
+<section id="teachers" class="section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" data-i18n="teachers.eyebrow">Our Teachers</div>
+      <h2 class="h2" data-i18n="teachers.title">Learn from the <em>best.</em></h2>
+      <p class="lede" style="margin:0 auto;" data-i18n="teachers.lede">They are highly qualified specialists with CELTA and IELTS 9.0 certificates.</p>
+    </div>
+    <div class="teach-grid stagger">
+      <div class="teach-cell reveal" style="--i:0">
+        <div class="photo">
+          <img src="assets/image_18.jpg" alt="Ismailov Sardorbek">
+          <button class="play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8V4z"/></svg></button>
+        </div>
+        <div class="info">
+          <h4>Ismailov Sardorbek</h4>
+          <div class="role" data-i18n="teachers.role">IELTS Instructor</div>
+          <div class="badges"><span>CELTA</span><span>IELTS 7.5</span><span>2.5+ <span data-i18n="teachers.yrs">Years</span></span></div>
+        </div>
+      </div>
+      <div class="teach-cell reveal" style="--i:1">
+        <div class="photo" style="--g:linear-gradient(160deg,#20190f,#0b0b0b)">
+          <span class="initials">KK</span>
+          <button class="play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8V4z"/></svg></button>
+        </div>
+        <div class="info">
+          <h4>Kristina Khafizova</h4>
+          <div class="role" data-i18n="teachers.role">IELTS Instructor</div>
+          <div class="badges"><span>CELTA</span><span>IELTS 9.0</span><span>5+ <span data-i18n="teachers.yrs">Years</span></span></div>
+        </div>
+      </div>
+      <div class="teach-cell reveal" style="--i:2">
+        <div class="photo" style="--g:linear-gradient(140deg,#191712,#0b0b0b)">
+          <span class="initials">NR</span>
+          <button class="play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8V4z"/></svg></button>
+        </div>
+        <div class="info">
+          <h4>Nurmuhammad Ravshanov</h4>
+          <div class="role" data-i18n="teachers.role">IELTS Instructor</div>
+          <div class="badges"><span>CELTA</span><span>IELTS 9.0</span><span>12+ <span data-i18n="teachers.yrs">Years</span></span></div>
+        </div>
+      </div>
+      <div class="teach-cell reveal" style="--i:3">
+        <div class="photo" style="--g:linear-gradient(150deg,#1e180d,#0b0b0b)">
+          <span class="initials">DS</span>
+          <button class="play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8V4z"/></svg></button>
+        </div>
+        <div class="info">
+          <h4>Diyor Soliyev</h4>
+          <div class="role" data-i18n="teachers.role">IELTS Instructor</div>
+          <div class="badges"><span>CELTA</span><span>IELTS 9.0</span><span>10+ <span data-i18n="teachers.yrs">Years</span></span></div>
+        </div>
+      </div>
+      <div class="teach-cell reveal" style="--i:4">
+        <div class="photo">
+          <img src="assets/image_19.jpg" alt="Ulugbek Nurmirzaev">
+          <button class="play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8V4z"/></svg></button>
+        </div>
+        <div class="info">
+          <h4>Ulugbek Nurmirzaev</h4>
+          <div class="role" data-i18n="teachers.role">IELTS Instructor</div>
+          <div class="badges"><span>CELTA</span><span>IELTS 7.0</span><span>1.5+ <span data-i18n="teachers.yrs">Years</span></span></div>
+        </div>
+      </div>
+      <div class="teach-cell reveal" style="--i:5">
+        <div class="photo">
+          <img src="assets/image_20.jpg" alt="Farzona Turgunova">
+          <button class="play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8V4z"/></svg></button>
+        </div>
+        <div class="info">
+          <h4>Farzona Turgunova</h4>
+          <div class="role" data-i18n="teachers.role">IELTS Instructor</div>
+          <div class="badges"><span>CELTA</span><span>IELTS 7.0</span><span>B2 CEFR</span></div>
+        </div>
+      </div>
+      <div class="teach-cell reveal" style="--i:6">
+        <div class="photo">
+          <img src="assets/image_21.jpg" alt="Ruxshona Soibova">
+          <button class="play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8V4z"/></svg></button>
+        </div>
+        <div class="info">
+          <h4>Ruxshona Soibova</h4>
+          <div class="role" data-i18n="teachers.role">IELTS Instructor</div>
+          <div class="badges"><span>CELTA</span><span>IELTS 7.5</span><span>3+ <span data-i18n="teachers.yrs">Years</span></span></div>
+        </div>
+      </div>
+      <div class="teach-cell reveal" style="--i:7">
+        <div class="photo">
+          <img src="assets/image_22.jpg" alt="Madina Abduvahobova">
+          <button class="play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8V4z"/></svg></button>
+        </div>
+        <div class="info">
+          <h4>Madina Abduvahobova</h4>
+          <div class="role" data-i18n="teachers.role">IELTS Instructor</div>
+          <div class="badges"><span>CELTA</span><span>IELTS 7.5</span><span>3.5+ <span data-i18n="teachers.yrs">Years</span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section id="news" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="news.eyebrow">News</div>
+      <h2 class="h2" data-i18n="news.title">From the <em>academy.</em></h2>
+    </div>
+    <div class="news-grid stagger">
+      <a class="news-card reveal" href="#" style="--i:0">
+        <div class="art" style="--g:linear-gradient(150deg,#1c1a14,#0b0b0b)"></div>
+        <div class="news-body"><span class="news-date" data-i18n="news.d1">September 2026</span><h4 data-i18n="news.h1">Speaking Club expands to two evenings a week</h4><p data-i18n="news.p1">More seats, more topics, and a new debate format for advanced students.</p></div>
+      </a>
+      <a class="news-card reveal" href="#" style="--i:1">
+        <div class="art" style="--g:linear-gradient(160deg,#20190f,#0b0b0b)"></div>
+        <div class="news-body"><span class="news-date" data-i18n="news.d2">August 2026</span><h4 data-i18n="news.h2">Five students reach CEFR C1 this term</h4><p data-i18n="news.p2">A record cohort for the academy's advanced track.</p></div>
+      </a>
+      <a class="news-card reveal" href="#" style="--i:2">
+        <div class="art" style="--g:linear-gradient(140deg,#191712,#0b0b0b)"></div>
+        <div class="news-body"><span class="news-date" data-i18n="news.d3">July 2026</span><h4 data-i18n="news.h3">The academy mobile app is now live</h4><p data-i18n="news.p3">Homework, vocabulary and progress tracking, all in one place.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container" style="max-width:820px;">
+    <div class="section-head center reveal">
+      <div class="eyebrow" data-i18n="faq.eyebrow">FAQ</div>
+      <h2 class="h2" data-i18n="faq.title">Good <em>questions.</em></h2>
+    </div>
+    <div class="reveal" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q"><span data-i18n="faq.q1">How long is each course?</span><span class="plus"></span></button>
+        <div class="faq-a"><p data-i18n="faq.a1">Most courses run in ongoing monthly cycles of 24 lessons, so you can start any month and continue at your own pace toward your goal level.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span data-i18n="faq.q2">How does the placement test work?</span><span class="plus"></span></button>
+        <div class="faq-a"><p data-i18n="faq.a2">A short written and spoken assessment maps you to a CEFR level, so you join the group — or individual track — that matches you exactly.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span data-i18n="faq.q3">Can I try a free lesson first?</span><span class="plus"></span></button>
+        <div class="faq-a"><p data-i18n="faq.a3">Yes. Every new student is welcome to one free lesson before enrolling, with no obligation to continue.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span data-i18n="faq.q4">What are the class sizes?</span><span class="plus"></span></button>
+        <div class="faq-a"><p data-i18n="faq.a4">Group lessons hold up to 14 students, Mini Groups up to 4, and Individual lessons are one-to-one with your teacher.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span data-i18n="faq.q5">Are teachers certified?</span><span class="plus"></span></button>
+        <div class="faq-a"><p data-i18n="faq.a5">All teachers hold an IELTS band of 7 or higher and are trained in British Council and CELTA-based methodology.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span data-i18n="faq.q6">How do I pay for lessons?</span><span class="plus"></span></button>
+        <div class="faq-a"><p data-i18n="faq.a6">Monthly payment plans are available in person at the academy or by bank transfer — our team will walk you through it after enrolment.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="contact.eyebrow">Contact</div>
+      <h2 class="h2" data-i18n="contact.title">Let's start your <em>first lesson.</em></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div><b data-i18n="contact.addr">Address</b><span data-i18n="contact.addrv">Engineering Street 12, Fergana</span></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .7 3a2 2 0 01-.4 2.1L8 10.1a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c1 .4 2 .6 3 .7a2 2 0 011.6 2z"/></svg></div>
+          <div><b data-i18n="contact.phone">Phone</b><a href="tel:+998908488787">+998 90 848 87 87</a><br><a href="tel:+998908315553">+998 90 831 55 53</a></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <div><b data-i18n="contact.tg">Telegram</b><a href="https://t.me/Nuriksacademy" target="_blank" rel="noopener">t.me/Nuriksacademy</a></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></div>
+          <div><b data-i18n="contact.ig">Instagram</b><a href="https://instagram.com/nuriks_academy" target="_blank" rel="noopener">@nuriks_academy</a></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+          <div><b data-i18n="contact.email">Email</b><a href="mailto:nuriksacademy@gmail.com">nuriksacademy@gmail.com</a></div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <a class="contact-map" href="https://maps.app.goo.gl/C1SX2r7zN8Heq1LQ6" target="_blank" rel="noopener noreferrer" aria-label="Open Nurik's Academy location in Google Maps" style="margin-bottom:24px;">
+          <svg viewBox="0 0 400 260"><g stroke="rgba(212,175,55,.28)" stroke-width="1"><path d="M0 40h400M0 90h400M0 140h400M0 190h400M60 0v260M140 0v260M220 0v260M300 0v260"/></g><circle cx="248" cy="104" r="6" fill="#D4AF37"><animate attributeName="r" values="6;16;6" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;1" dur="2.4s" repeatCount="indefinite"/></circle><circle cx="248" cy="104" r="4" fill="#EAD27E"/></svg>
+          <div class="map-pin-label"><b data-i18n="contact.mapb">Nurik's Academy</b><span data-i18n="contact.mapv">Engineering St. 12, Fergana</span></div>
+          <span class="map-open-badge">📍 Open in Google Maps ↗</span>
+        </a>
+
+        <form id="contactForm">
+          <div class="form-grid">
+            <div class="field"><label for="fldName" data-i18n="form.name">Full Name</label><input id="fldName" name="name" autocomplete="name" type="text" required placeholder="Aminjonov Nurmuhammad"></div>
+            <div class="field"><label for="fldPhone" data-i18n="form.phone">Phone Number</label><input id="fldPhone" name="phone" autocomplete="tel" type="tel" required placeholder="+998 9_ ___ ___" value="+998 " maxlength="14" inputmode="numeric" pattern="\+998\s?\d{9}"></div>
+            <div class="field full"><label for="fldCourse" data-i18n="form.course">Course of Interest</label>
+              <select id="fldCourse" name="course">
+                <option data-i18n="courses.t1">General English</option>
+                <option data-i18n="courses.t2">IELTS</option>
+                <option data-i18n="courses.t3">CEFR</option>
+                <option data-i18n="courses.t4">Kids English</option>
+              </select>
+            </div>
+            <div class="field full"><label for="fldMsg" data-i18n="form.msg">Message (optional)</label><textarea id="fldMsg" name="message" rows="3" placeholder="Tell us about your goals..."></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-gold" data-magnetic style="width:100%;margin-top:22px;" data-i18n="form.submit">Book a Free Lesson</button>
+          <p class="form-note" data-i18n="form.note">We reply within a few hours, every day of the week.</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h4 data-i18n="form.thankstitle">Thank you — you're on the list.</h4>
+          <p class="lede" data-i18n="form.thanksbody" style="margin:10px auto 0;">Our team will contact you shortly to schedule your free lesson.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="#hero" class="logo"><img class="mark" src="assets/image_23.png" alt="Nurik's Academy logo"><span data-i18n="brand">Nurik's Academy</span></a>
+        <p data-i18n="foot.tag">A premium English academy in Fergana — General English, IELTS, CEFR and Kids English, taught with British Council methodology.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <b data-i18n="foot.explore">Explore</b>
+          <ul>
+            <li><a href="#story" data-i18n="nav.story">Story</a></li>
+            <li><a href="#courses" data-i18n="nav.courses">Courses</a></li>
+            <li><a href="#results" data-i18n="nav.results">Results</a></li>
+            <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <b data-i18n="foot.contact">Contact</b>
+          <ul>
+            <li><a href="tel:+998908488787">+998 90 848 87 87</a></li>
+            <li><a href="mailto:nuriksacademy@gmail.com">nuriksacademy@gmail.com</a></li>
+            <li><a data-i18n="contact.addrv">Engineering Street 12, Fergana</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="foot-bottom" style="margin-top:26px;">
+      <span data-i18n="foot.rights">© 2026 Nurik's Academy. All rights reserved.</span>
+      <div class="foot-social">
+        <a href="https://t.me/Nuriksacademy" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></a>
+        <a href="https://instagram.com/nuriks_academy" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-cta" id="floatingCta">
+  <a href="https://t.me/Nuriksacademy" target="_blank" rel="noopener" class="fab" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></a>
+  <a href="#contact" class="btn btn-gold btn-sm" data-magnetic><svg class="btn-sm-icon" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span class="btn-sm-label" data-i18n="hero.cta1">Book a Free Lesson</span></a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://unpkg.com/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+<script src="https://unpkg.com/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+<script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+<script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+<script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+<script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+
+<script>
+(function(){
+"use strict";
+var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var hasGSAP = typeof gsap !== 'undefined';
+var hasST = hasGSAP && typeof ScrollTrigger !== 'undefined';
+if(hasST) gsap.registerPlugin(ScrollTrigger);
+
+/* ---------------- LENIS SMOOTH SCROLL ---------------- */
+var lenis = null;
+if(typeof Lenis !== 'undefined' && !reduceMotion){
+  try{
+    lenis = new Lenis({ duration: 1.1, smoothWheel:true });
+    function raf(time){ lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+    if(hasST){ lenis.on('scroll', ScrollTrigger.update); gsap.ticker.add(function(time){ lenis.raf(time*1000); }); gsap.ticker.lagSmoothing(0); }
+  }catch(e){ lenis = null; }
+}
+function scrollToEl(el){
+  if(lenis){ lenis.scrollTo(el, {offset:-70}); }
+  else { var y = el.getBoundingClientRect().top + window.pageYOffset - 70; window.scrollTo({top:y, behavior:'smooth'}); }
+}
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click', function(e){
+    var id = a.getAttribute('href');
+    if(id.length>1){
+      var target = document.querySelector(id);
+      if(target){ e.preventDefault(); scrollToEl(target); closeDrawer(); }
+    }
+  });
+});
+
+/* ---------------- PRELOADER ---------------- */
+window.addEventListener('load', function(){
+  setTimeout(function(){
+    document.getElementById('preloader').classList.add('done');
+    playHeroIntro();
+  }, 900);
+});
+
+/* ---------------- CURSOR ---------------- */
+var dot = document.getElementById('cursorDot'), ring = document.getElementById('cursorRing');
+var mx=0,my=0,rx=0,ry=0;
+window.addEventListener('mousemove', function(e){ mx=e.clientX; my=e.clientY; dot.style.left=mx+'px'; dot.style.top=my+'px'; });
+(function loopCursor(){ rx += (mx-rx)*0.18; ry += (my-ry)*0.18; ring.style.left=rx+'px'; ring.style.top=ry+'px'; requestAnimationFrame(loopCursor); })();
+document.querySelectorAll('a,button,.why-card,.price-card,.news-card').forEach(function(el){
+  el.addEventListener('mouseenter', function(){ ring.classList.add('hovering'); });
+  el.addEventListener('mouseleave', function(){ ring.classList.remove('hovering'); });
+});
+
+/* ---------------- MAGNETIC BUTTONS ---------------- */
+document.querySelectorAll('[data-magnetic]').forEach(function(el){
+  el.addEventListener('mousemove', function(e){
+    var r = el.getBoundingClientRect();
+    var mx2 = e.clientX - r.left - r.width/2, my2 = e.clientY - r.top - r.height/2;
+    el.style.transform = 'translate('+(mx2*0.25)+'px,'+(my2*0.35)+'px)';
+  });
+  el.addEventListener('mouseleave', function(){ el.style.transform = 'translate(0,0)'; });
+});
+
+/* ---------------- NAV + SCROLL PROGRESS + THREAD ---------------- */
+var nav = document.getElementById('siteNav');
+var scrollTop = document.getElementById('scrollTop');
+var threadFill = document.getElementById('threadFill');
+var floatingCta = document.getElementById('floatingCta');
+var heroSection = document.getElementById('hero');
+function onScroll(){
+  var y = window.scrollY || window.pageYOffset;
+  nav.classList.toggle('scrolled', y > 60);
+  var docH = document.documentElement.scrollHeight - window.innerHeight;
+  var pct = docH>0 ? (y/docH)*100 : 0;
+  scrollTop.style.width = pct+'%';
+  threadFill.style.height = pct+'%';
+  floatingCta.classList.toggle('show', y > heroSection.offsetHeight*0.6);
+}
+window.addEventListener('scroll', onScroll, {passive:true});
+if(lenis) lenis.on('scroll', onScroll);
+onScroll();
+
+/* ---------------- MOBILE DRAWER ---------------- */
+var drawer = document.getElementById('drawer');
+function closeDrawer(){ drawer.classList.remove('open'); }
+document.getElementById('burgerBtn').addEventListener('click', function(){ drawer.classList.add('open'); });
+document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+drawer.addEventListener('click', function(e){ if(e.target===drawer) closeDrawer(); });
+
+/* ---------------- THEME TOGGLE ---------------- */
+var themeToggle = document.getElementById('themeToggle');
+var themeIcon = document.getElementById('themeIcon');
+themeToggle.addEventListener('click', function(){
+  var html = document.documentElement;
+  var isLight = html.getAttribute('data-theme') === 'light';
+  html.setAttribute('data-theme', isLight ? 'dark' : 'light');
+  themeIcon.innerHTML = isLight
+    ? '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>'
+    : '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
+});
+
+/* ---------------- LANGUAGE SWITCHER ---------------- */
+var translations = {
+  en: {},
+  ru: {
+    "brand":"Nurik's Academy","nav.story":"История","nav.courses":"Курсы","nav.book":"Книга","nav.results":"Результаты","nav.teachers":"Учителя","nav.faq":"Вопросы","nav.contact":"Контакты","nav.cta":"Записаться бесплатно",
+    "hero.eyebrow":"Премиум-школа английского в Фергане","hero.sub":"Учите английский с уверенностью.","hero.cta1":"Записаться на бесплатный урок","hero.cta2":"Пройти тест","hero.scroll":"Листайте",
+    "story.eyebrow":"Наша история","story.title":"Каждое свободное предложение с чего-то начинается.","story.p1":"Мы открыли Nurik's Academy, чтобы помочь людям добиться своей мечты благодаря английскому.","story.p2":"Будь то university, карьера или международное общение — мы ведём каждого студента через структурированные уроки, опытных преподавателей и постоянную поддержку.","story.grads":"Выпускников и продолжается","story.t1":"Академия открывает двери","story.t2":"Студенты приходят каждый месяц","story.t3":"Уверенность растёт с каждым уроком","story.t4":"Английский становится частью жизни","story.t5":"700+ выпускников продолжают путь",
+    "stats.s1":"Года опыта","stats.s2":"Выпускников","stats.s3":"Преподавателей","stats.s4":"Активных студентов","stats.s5":"Лучший результат ученика","stats.s6":"Достижение ученика",
+    "why.eyebrow":"Почему мы","why.title":"Структура для реального прогресса.","why.c1t":"6 уроков в неделю","why.c1p":"Три с основным учителем, три с учителем поддержки.","why.c2t":"Speaking Club","why.c2p":"Отдельная практика речи каждую неделю.","why.c3t":"Методология British Council","why.c3p":"Учителя обучены по стандартам British Council.","why.c4t":"Методика на основе CELTA","why.c4p":"Современные коммуникативные методы обучения.","why.c5t":"Учебник и рабочая тетрадь","why.c5p":"Каждый студент получает полный комплект.","why.c6t":"Мобильное приложение","why.c6p":"Практика и отслеживание прогресса в приложении.","why.c7t":"Индивидуальная поддержка","why.c7p":"Личное внимание к целям и темпу.","why.c8t":"Современные классы","why.c8p":"Комфортные, светлые пространства для фокуса.",
+    "courses.eyebrow":"Курсы","courses.title":"Выберите свой путь.","courses.t1":"Общий английский","courses.t2":"IELTS","courses.t3":"CEFR","courses.t4":"Детский английский","courses.popular":"Популярный выбор","courses.gd":"Развивайте реальные навыки общения по структурированной программе.","courses.id":"Целевая подготовка по всем четырём навыкам IELTS.","courses.cd":"Программа по уровням CEFR с понятным прогрессом.","courses.kd":"Игровая программа для юных учеников.",
+    "fmt.group":"Группа","fmt.groupd":"14 студентов · 90 мин","fmt.mini":"Мини-группа","fmt.minid":"4 студента · 60 мин","fmt.ind":"Индивидуально","fmt.indd":"1 студент · 60 мин",
+    "fc.1":"24 урока в месяц","fc.2":"6 уроков в неделю","fc.3":"Speaking Club","fc.4":"Учитель поддержки","fc.5":"Учебник","fc.6":"Рабочая тетрадь","fc.7":"Мобильное приложение","fc.8":"Индивидуальная поддержка",
+    "book.eyebrow":"Книга академии","book.title":"Одна книга. Все преимущества.","book.p":"Листайте, чтобы открыть её — вся академия, скреплённая одной золотой нитью.","book.pg1":"Speaking Club","book.pg2":"Учитель поддержки","book.pg3":"Рабочая тетрадь","book.pg4":"Практика","book.pg5":"Стратегия IELTS","book.pg6":"Уверенность",
+    "global.eyebrow":"География","global.title":"Из Ферганы в мир.","global.dest":"Направление учёбы","global.home":"Родная академия",
+    "placement.eyebrow":"Тест","placement.title":"Определите свой уровень.","placement.lede":"Три коротких вопроса — часть полного теста нашей академии.","placement.donetitle":"Ваш примерный уровень","placement.cta":"Пройти полный тест",
+    "results.eyebrow":"Результаты","results.title":"Доказательства, а не обещания.","results.overall":"Общий балл","results.adv":"Продвинутый","results.upperint":"Выше среднего","results.grads":"Выпускников","results.since":"С 2024 года",
+    "gallery.eyebrow":"Внутри академии","gallery.title":"Место, куда хочется приходить.","gallery.g1":"Современные классы","gallery.g2":"Speaking Club","gallery.g3":"День выпуска","gallery.g4":"Мероприятия","gallery.g5":"Зона отдыха","gallery.g6":"Подготовка к экзаменам",
+    "teachers.eyebrow":"Наши учителя","teachers.title":"Учитесь у лучших.","teachers.lede":"Это высококвалифицированные специалисты с сертификатами CELTA и IELTS 9.0.","teachers.role":"Преподаватель IELTS","teachers.yrs":"лет",
+    "news.eyebrow":"Новости","news.title":"Из жизни академии.","news.d1":"Сентябрь 2026","news.h1":"Speaking Club теперь дважды в неделю","news.p1":"Больше мест, новый формат дебатов для продвинутых.","news.d2":"Август 2026","news.h2":"Пять студентов достигли уровня C1","news.p2":"Рекордный поток на продвинутом уровне.","news.d3":"Июль 2026","news.h3":"Мобильное приложение академии уже доступно","news.p3":"Домашние задания и прогресс — в одном месте.",
+    "faq.eyebrow":"Вопросы","faq.title":"Хорошие вопросы.","faq.q1":"Сколько длится курс?","faq.a1":"Курсы идут циклами по 24 урока в месяц — можно начать в любой месяц.","faq.q2":"Как проходит тест на уровень?","faq.a2":"Короткая проверка речи и письма определяет ваш уровень CEFR.","faq.q3":"Можно ли попробовать бесплатный урок?","faq.a3":"Да, первый урок для новых студентов бесплатный.","faq.q4":"Какой размер групп?","faq.a4":"Группа — до 14, мини-группа — до 4, индивидуально — один на один.","faq.q5":"Сертифицированы ли учителя?","faq.a5":"Все учителя имеют IELTS 7+ и обучены по British Council и CELTA.","faq.q6":"Как оплатить занятия?","faq.a6":"Оплата помесячно — в академии или переводом.",
+    "contact.eyebrow":"Контакты","contact.title":"Начнём ваш первый урок.","contact.addr":"Адрес","contact.addrv":"Улица Инженерная 12, Фергана","contact.phone":"Телефон","contact.tg":"Telegram","contact.ig":"Instagram","contact.email":"Email","contact.mapb":"Nurik's Academy","contact.mapv":"Ул. Инженерная 12, Фергана",
+    "form.name":"Полное имя","form.phone":"Номер телефона","form.course":"Интересующий курс","form.msg":"Сообщение (необязательно)","form.submit":"Записаться бесплатно","form.note":"Мы отвечаем в течение нескольких часов, каждый день.","form.thankstitle":"Спасибо — вы в списке.","form.thanksbody":"Наша команда свяжется с вами для записи на бесплатный урок.",
+    "foot.tag":"Премиальная школа английского в Фергане — General English, IELTS, CEFR и Kids English.","foot.explore":"Разделы","foot.contact":"Контакты","foot.rights":"© 2026 Nurik's Academy. Все права защищены."
+  },
+  uz: {
+    "brand":"Nurik's Academy","nav.story":"Tarix","nav.courses":"Kurslar","nav.book":"Kitob","nav.results":"Natijalar","nav.teachers":"Ustozlar","nav.faq":"Savollar","nav.contact":"Aloqa","nav.cta":"Bepul darsga yozilish",
+    "hero.eyebrow":"Farg'onaning premium ingliz tili akademiyasi","hero.sub":"Ishonch bilan ingliz tilini o'rganing.","hero.cta1":"Bepul darsga yozilish","hero.cta2":"Test topshirish","hero.scroll":"Pastga suring",
+    "story.eyebrow":"Bizning tariximiz","story.title":"Har bir ravon gap biror joydan boshlanadi.","story.p1":"Biz Nurik's Academy'ni odamlarga ingliz tili orqali orzularига erishishga yordam berish uchun ochdik.","story.p2":"Maqsad universitet, karyera yoki xalqaro muloqot bo'lsin — har bir talabani tuzilgan darslar, tajribali o'qituvchilar va doimiy yordam bilan yetaklaymiz.","story.grads":"Bitiruvchi va o'sishda davom etmoqda","story.t1":"Akademiya eshiklarini ochadi","story.t2":"Har oy yangi talabalar qo'shiladi","story.t3":"Har darsda ishonch ortadi","story.t4":"Ingliz tili kundalik hayot qismiga aylanadi","story.t5":"700+ bitiruvchi yo'lni davom ettiradi",
+    "stats.s1":"Yillik tajriba","stats.s2":"Bitiruvchilar","stats.s3":"O'qituvchilar","stats.s4":"Faol talabalar","stats.s5":"Eng yuqori natija","stats.s6":"Talaba yutug'i",
+    "why.eyebrow":"Nega bizni tanlash kerak","why.title":"Haqiqiy natija uchun tuzilgan.","why.c1t":"Haftada 6 dars","why.c1p":"Uchtasi asosiy, uchtasi yordamchi o'qituvchi bilan.","why.c2t":"Speaking Club","why.c2p":"Har hafta alohida nutq mashqi.","why.c3t":"British Council metodologiyasi","why.c3p":"O'qituvchilar British Council standartlari bo'yicha tayyorlangan.","why.c4t":"CELTA asosidagi ta'lim","why.c4p":"Zamonaviy kommunikativ o'qitish usullari.","why.c5t":"Darslik va ish daftari","why.c5p":"Har bir talaba to'liq to'plam oladi.","why.c6t":"Mobil ilova","why.c6p":"Mashqlar va progress kuzatuvi ilovada.","why.c7t":"Individual yordam","why.c7p":"Maqsad va sur'atingizga shaxsiy e'tibor.","why.c8t":"Zamonaviy sinflar","why.c8p":"Diqqat uchun qulay, yorug' xonalar.",
+    "courses.eyebrow":"Kurslar","courses.title":"Yo'lingizni tanlang.","courses.t1":"Umumiy ingliz tili","courses.t2":"IELTS","courses.t3":"CEFR","courses.t4":"Bolalar uchun ingliz tili","courses.popular":"Eng mashhur","courses.gd":"Tuzilgan dastur bilan real muloqot ko'nikmalarini rivojlantiring.","courses.id":"IELTSning barcha 4 ko'nikmasiga qaratilgan tayyorgarlik.","courses.cd":"CEFR darajalariga mos, aniq progressli dastur.","courses.kd":"Yosh o'quvchilar uchun o'yinli dastur.",
+    "fmt.group":"Guruh","fmt.groupd":"14 talaba · 90 daqiqa","fmt.mini":"Mini guruh","fmt.minid":"4 talaba · 60 daqiqa","fmt.ind":"Individual","fmt.indd":"1 talaba · 60 daqiqa",
+    "fc.1":"Oyiga 24 dars","fc.2":"Haftada 6 dars","fc.3":"Speaking Club","fc.4":"Yordamchi o'qituvchi","fc.5":"Darslik","fc.6":"Ish daftari","fc.7":"Mobil ilova","fc.8":"Individual yordam",
+    "book.eyebrow":"Akademiya kitobi","book.title":"Bitta kitob. Barcha afzalliklar.","book.p":"Uni ochish uchun suring — bitta oltin ip bilan bog'langan akademiya tajribasi.","book.pg1":"Speaking Club","book.pg2":"Yordamchi o'qituvchi","book.pg3":"Ish daftari","book.pg4":"Mashq","book.pg5":"IELTS strategiyasi","book.pg6":"Ishonch",
+    "global.eyebrow":"Global miqyos","global.title":"Farg'onadan dunyoga.","global.dest":"O'qish yo'nalishi","global.home":"Ona akademiya",
+    "placement.eyebrow":"Test","placement.title":"Darajangizni aniqlang.","placement.lede":"Uchta qisqa savol — akademiyamizning to'liq testidan namuna.","placement.donetitle":"Taxminiy darajangiz","placement.cta":"To'liq testni topshirish",
+    "results.eyebrow":"Talabalar natijalari","results.title":"Va'da emas, dalil.","results.overall":"Umumiy ball","results.adv":"Yuqori daraja","results.upperint":"O'rta-yuqori","results.grads":"Bitiruvchilar","results.since":"2024 yildan buyon",
+    "gallery.eyebrow":"Akademiya ichida","gallery.title":"Kelgingiz keladigan joy.","gallery.g1":"Zamonaviy sinflar","gallery.g2":"Speaking Club","gallery.g3":"Bitiruv kuni","gallery.g4":"Tadbirlar","gallery.g5":"Talabalar zali","gallery.g6":"Imtihonga tayyorgarlik",
+    "teachers.eyebrow":"Ustozlarimiz","teachers.title":"Eng yaxshilardan o'rganing.","teachers.lede":"Ular CELTA va IELTS 9.0 sertifikatlariga ega yuqori malakali mutaxassislardir.","teachers.role":"IELTS o'qituvchisi","teachers.yrs":"yil",
+    "news.eyebrow":"Yangiliklar","news.title":"Akademiya hayotidan.","news.d1":"2026-yil sentabr","news.h1":"Speaking Club endi haftada ikki marta","news.p1":"Ko'proq o'rin, ilg'orlar uchun yangi format.","news.d2":"2026-yil avgust","news.h2":"Beshta talaba C1 darajasiga yetdi","news.p2":"Ilg'or bosqichda rekord ko'rsatkich.","news.d3":"2026-yil iyul","news.h3":"Akademiya mobil ilovasi endi mavjud","news.p3":"Uy vazifasi va progress — bir joyda.",
+    "faq.eyebrow":"Savollar","faq.title":"Yaxshi savollar.","faq.q1":"Har bir kurs qancha davom etadi?","faq.a1":"Kurslar oyiga 24 darsdan iborat davrlarda davom etadi — istalgan oyda boshlashingiz mumkin.","faq.q2":"Daraja aniqlash testi qanday ishlaydi?","faq.a2":"Qisqa yozma va og'zaki test CEFR darajangizni aniqlaydi.","faq.q3":"Bepul darsni sinab ko'rish mumkinmi?","faq.a3":"Ha, har bir yangi talaba uchun birinchi dars bepul.","faq.q4":"Guruh hajmi qanday?","faq.a4":"Guruhda 14 tagacha, mini guruhda 4 tagacha, individualda 1 talaba.","faq.q5":"O'qituvchilar sertifikatlanganmi?","faq.a5":"Barcha o'qituvchilar IELTS 7+ va British Council/CELTA bo'yicha tayyorlangan.","faq.q6":"Darslar uchun qanday to'lov qilinadi?","faq.a6":"Oylik to'lov rejalari akademiyada yoki bank o'tkazmasi orqali.",
+    "contact.eyebrow":"Aloqa","contact.title":"Birinchi darsingizni boshlaylik.","contact.addr":"Manzil","contact.addrv":"Muhandislik ko'chasi 12, Farg'ona","contact.phone":"Telefon","contact.tg":"Telegram","contact.ig":"Instagram","contact.email":"Email","contact.mapb":"Nurik's Academy","contact.mapv":"Muhandislik ko'chasi 12, Farg'ona",
+    "form.name":"To'liq ism","form.phone":"Telefon raqami","form.course":"Qiziqqan kurs","form.msg":"Xabar (ixtiyoriy)","form.submit":"Bepul darsga yozilish","form.note":"Har kuni bir necha soat ichida javob beramiz.","form.thankstitle":"Rahmat — siz ro'yxatdasiz.","form.thanksbody":"Jamoamiz bepul darsni belgilash uchun siz bilan tez orada bog'lanadi.",
+    "foot.tag":"Farg'onadagi premium ingliz tili akademiyasi — General English, IELTS, CEFR va bolalar uchun ingliz tili.","foot.explore":"Bo'limlar","foot.contact":"Aloqa","foot.rights":"© 2026 Nurik's Academy. Barcha huquqlar himoyalangan."
+  }
+};
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+  translations.en[el.getAttribute('data-i18n')] = el.textContent;
+});
+var currentLang = 'en';
+function setLang(lang){
+  currentLang = lang;
+  var dict = translations[lang] || translations.en;
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var key = el.getAttribute('data-i18n');
+    if(dict[key]) el.textContent = dict[key];
+    else if(translations.en[key]) el.textContent = translations.en[key];
+  });
+  document.querySelectorAll('#langSwitch button').forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-lang')===lang); });
+  document.documentElement.setAttribute('lang', lang);
+}
+document.querySelectorAll('#langSwitch button').forEach(function(b){
+  b.addEventListener('click', function(){
+    document.body.style.opacity = '.4';
+    setTimeout(function(){ setLang(b.getAttribute('data-lang')); document.body.style.transition='opacity .35s'; document.body.style.opacity='1'; }, 120);
+  });
+});
+
+/* ---------------- HERO: letter reveal + canvas particles + word flight ---------------- */
+var heroTitleText = "Nurik's Academy";
+var heroTitleEl = document.getElementById('heroTitle');
+var heroTitleWords = heroTitleText.split(' ');
+var globalIdx = 0;
+heroTitleWords.forEach(function(word, wi){
+  var wordEl = document.createElement('span');
+  wordEl.className = 'word';
+  wordEl.style.display = 'inline-block';
+  wordEl.style.whiteSpace = 'nowrap';
+  word.split('').forEach(function(ch){
+    var span = document.createElement('span');
+    span.className = 'char' + (ch==="'"?' apos':'');
+    span.textContent = ch;
+    span.style.transitionDelay = (globalIdx*28)+'ms';
+    wordEl.appendChild(span);
+    globalIdx++;
+  });
+  heroTitleEl.appendChild(wordEl);
+  if (wi < heroTitleWords.length - 1){
+    heroTitleEl.appendChild(document.createTextNode(' '));
+    globalIdx++;
+  }
+});
+
+function playHeroIntro(){
+  var chars = heroTitleEl.querySelectorAll('.char');
+  var sub = document.getElementById('heroSub');
+  var ctas = document.getElementById('heroCtas');
+  if(hasGSAP && !reduceMotion){
+    var tl = gsap.timeline({defaults:{ease:'power3.out'}});
+    tl.to(chars, {opacity:1, y:0, rotate:0, duration:0.9, stagger:0.035})
+      .to(sub, {opacity:1, y:0, duration:0.8}, '-=0.4')
+      .to(ctas, {opacity:1, y:0, duration:0.8}, '-=0.5');
+  } else {
+    chars.forEach(function(c){ c.style.opacity=1; c.style.transform='none'; });
+    sub.style.opacity=1; ctas.style.opacity=1;
+  }
+}
+// fallback if load event already fired before script executed
+if(document.readyState === 'complete'){
+  setTimeout(function(){ document.getElementById('preloader').classList.add('done'); playHeroIntro(); }, 300);
+}
+
+/* hero canvas particles */
+(function(){
+  var canvas = document.getElementById('hero-canvas');
+  var ctx = canvas.getContext('2d');
+  var w,h,particles=[];
+  function resize(){ w = canvas.width = canvas.offsetWidth; h = canvas.height = canvas.offsetHeight; }
+  window.addEventListener('resize', resize); resize();
+  var count = reduceMotion ? 0 : (window.innerWidth < 700 ? 34 : 70);
+  for(var i=0;i<count;i++){
+    particles.push({ x:Math.random()*w, y:Math.random()*h, r:Math.random()*1.8+0.4, s:Math.random()*0.4+0.1, o:Math.random()*0.5+0.15, drift:(Math.random()-0.5)*0.3 });
+  }
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    ctx.fillStyle = 'rgba(11,11,11,1)';
+    var grad = ctx.createRadialGradient(w*0.5,h*0.15,0,w*0.5,h*0.5,Math.max(w,h)*0.8);
+    grad.addColorStop(0,'#151208'); grad.addColorStop(1,'#0B0B0B');
+    ctx.fillStyle = grad; ctx.fillRect(0,0,w,h);
+    particles.forEach(function(p){
+      p.y -= p.s; p.x += p.drift;
+      if(p.y < -10){ p.y = h+10; p.x = Math.random()*w; }
+      ctx.beginPath();
+      ctx.fillStyle = 'rgba(212,175,55,'+p.o+')';
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* floating hero words that rise on scroll */
+var heroWordsData = ["IELTS","CEFR","SPEAK","SUCCESS","CONFIDENCE","FLUENCY"];
+var heroWordsWrap = document.getElementById('heroWords');
+var wordEls = heroWordsData.map(function(word,i){
+  var el = document.createElement('div');
+  el.className = 'hero-word';
+  el.textContent = word;
+  el.style.left = (10 + (i%3)*32 + (Math.random()*6))+'%';
+  el.style.top = (18 + Math.floor(i/3)*45 + (Math.random()*8))+'%';
+  heroWordsWrap.appendChild(el);
+  return el;
+});
+if(hasST && !reduceMotion){
+  ScrollTrigger.create({
+    trigger:'#hero', start:'top top', end:'bottom top', scrub:0.6,
+    onUpdate: function(self){
+      var p = self.progress;
+      wordEls.forEach(function(el,i){
+        var delay = i/wordEls.length*0.5;
+        var local = Math.max(0, Math.min(1,(p-delay)/(1-delay)));
+        el.style.opacity = Math.sin(local*Math.PI)*0.9;
+        el.style.transform = 'translateY('+(-local*160)+'px)';
+      });
+    }
+  });
+}
+
+/* ---------------- SCROLL REVEALS (IntersectionObserver, dependency-free) ---------------- */
+var revealEls = document.querySelectorAll('.reveal, .reveal-scale');
+if('IntersectionObserver' in window){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
+    });
+  }, {threshold:0.15, rootMargin:'0px 0px -60px 0px'});
+  revealEls.forEach(function(el){ io.observe(el); });
+} else {
+  revealEls.forEach(function(el){ el.classList.add('in'); });
+}
+
+/* ---------------- COUNTERS ---------------- */
+var counters = document.querySelectorAll('[data-count]');
+function animateCounter(el){
+  var target = parseFloat(el.getAttribute('data-count'));
+  var decimals = parseInt(el.getAttribute('data-decimal')||'0',10);
+  var suffix = el.getAttribute('data-suffix')||'';
+  var dur = 1600, start = null;
+  function step(ts){
+    if(!start) start = ts;
+    var p = Math.min(1,(ts-start)/dur);
+    var eased = 1-Math.pow(1-p,3);
+    var val = target*eased;
+    el.textContent = (decimals? val.toFixed(decimals): Math.round(val)) + suffix;
+    if(p<1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+if('IntersectionObserver' in window){
+  var cio = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){ animateCounter(entry.target); cio.unobserve(entry.target); }
+    });
+  }, {threshold:0.5});
+  counters.forEach(function(el){ cio.observe(el); });
+}
+
+/* ---------------- COURSE TABS ---------------- */
+document.querySelectorAll('.course-tab').forEach(function(tab){
+  tab.addEventListener('click', function(){
+    document.querySelectorAll('.course-tab').forEach(function(t){ t.classList.remove('active'); });
+    document.querySelectorAll('.course-panel').forEach(function(p){ p.classList.remove('active'); });
+    tab.classList.add('active');
+    document.querySelector('.course-panel[data-panel="'+tab.getAttribute('data-tab')+'"]').classList.add('active');
+  });
+});
+
+/* ---------------- BOOK: pinned open/rotate + turning pages ---------------- */
+var bookCover = document.getElementById('bookCover');
+var bookPage = document.getElementById('bookPage');
+var book3d = document.getElementById('book3d');
+var plItems = document.querySelectorAll('.pl-item');
+var pageLeaves = document.querySelectorAll('.page-leaf');
+var totalPages = pageLeaves.length;
+function setActivePageUI(idx){
+  plItems.forEach(function(pl){ pl.classList.toggle('active', parseInt(pl.getAttribute('data-page'),10)===idx); });
+}
+function setBookPage(idx){
+  bookPage.classList.add('show');
+  pageLeaves.forEach(function(leaf){
+    var i = parseInt(leaf.getAttribute('data-page'),10);
+    leaf.style.transform = 'rotateY('+(i<idx ? -180 : 0)+'deg)';
+  });
+  setActivePageUI(idx);
+}
+if(hasST && !reduceMotion){
+  ScrollTrigger.create({
+    trigger:'#book', start:'top 75%', end:'bottom 60%', scrub:0.7,
+    onUpdate:function(self){
+      var p = self.progress;
+      var rotY = -24 + p*40;
+      book3d.style.transform = 'rotateY('+rotY+'deg) rotateX('+(4-p*4)+'deg)';
+      var openDeg = Math.min(1, p*1.6)*-150;
+      bookCover.style.transform = 'rotateY('+openDeg+'deg)';
+      bookPage.classList.add('show');
+      var pageProgress = p*totalPages;
+      pageLeaves.forEach(function(leaf){
+        var i = parseInt(leaf.getAttribute('data-page'),10);
+        var local = Math.max(0, Math.min(1, pageProgress - i));
+        leaf.style.transform = 'rotateY('+(local*-180)+'deg)';
+      });
+      var activeIdx = Math.min(totalPages-1, Math.floor(pageProgress));
+      setActivePageUI(activeIdx);
+    }
+  });
+} else {
+  setBookPage(0);
+  bookCover.style.transform = 'rotateY(-150deg)';
+}
+plItems.forEach(function(pl){
+  pl.addEventListener('click', function(){ setBookPage(parseInt(pl.getAttribute('data-page'),10)); });
+});
+
+/* ---------------- GLASS GLOBE (Three.js) ---------------- */
+(function(){
+  var mount = document.getElementById('globe');
+  var canvas = document.getElementById('globeCanvas');
+  if (!mount || !canvas || typeof THREE === 'undefined') return;
+
+  var GOLD = 0xD4AF37;
+  var GOLD_LIGHT = 0xEAD27E;
+  var RADIUS = 3;
+
+  var scene = new THREE.Scene();
+
+  var camera = new THREE.PerspectiveCamera(36, 1, 0.1, 100);
+  camera.position.set(0, 0.35, 11.5);
+
+  var renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true, powerPreference: 'high-performance' });
+  if ('outputEncoding' in renderer) renderer.outputEncoding = THREE.sRGBEncoding;
+  if ('toneMapping' in renderer) renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.15;
+
+  var globeGroup = new THREE.Group();
+  scene.add(globeGroup);
+
+  var clock = new THREE.Clock();
+  var reduceMotion = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  var hasGsap = typeof gsap !== 'undefined';
+
+  /* Mobile / low-power detection — used to automatically dial back the
+     heaviest effects (postprocessing, geometry density, pixel ratio) so
+     the globe stays smooth on phones. */
+  var isMobile = !!(
+    (window.matchMedia && window.matchMedia('(pointer:coarse)').matches) ||
+    window.innerWidth < 760
+  );
+  var SPHERE_SEG = isMobile ? 48 : 96;
+  var ARC_TUBE_SEG = isMobile ? 64 : 128;
+  var ARC_RADIAL_SEG = isMobile ? 6 : 8;
+
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.5 : 2));
+
+  /* Lighting — tuned for a warm, premium glass look */
+  scene.add(new THREE.AmbientLight(0xffffff, 0.45));
+  var key = new THREE.DirectionalLight(0xfff2d0, 1.5);
+  key.position.set(5, 4.5, 6);
+  scene.add(key);
+  var rim = new THREE.DirectionalLight(GOLD_LIGHT, 1.1);
+  rim.position.set(-6, -2, -5);
+  scene.add(rim);
+  var fill = new THREE.DirectionalLight(0xffffff, 0.3);
+  fill.position.set(-3, 2, 4);
+  scene.add(fill);
+
+  /* ---- Studio environment map, used to give the glass real reflections ---- */
+  function makeEnvTexture(){
+    var w = 512, h = 256;
+    var cv = document.createElement('canvas');
+    cv.width = w; cv.height = h;
+    var ctx = cv.getContext('2d');
+    var sky = ctx.createLinearGradient(0, 0, 0, h);
+    sky.addColorStop(0.00, '#2a251a');
+    sky.addColorStop(0.22, '#171410');
+    sky.addColorStop(0.46, '#0c0b09');
+    sky.addColorStop(0.5,  '#050505');
+    sky.addColorStop(0.54, '#0c0b09');
+    sky.addColorStop(0.78, '#171410');
+    sky.addColorStop(1.00, '#231e15');
+    ctx.fillStyle = sky;
+    ctx.fillRect(0, 0, w, h);
+    // Two soft warm "studio window" highlights — this is what a glass
+    // material picks up as bright reflective streaks.
+    function softSpot(cx, cy, rx, ry, color, alpha){
+      var g = ctx.createRadialGradient(cx, cy, 0, cx, cy, Math.max(rx, ry));
+      g.addColorStop(0, 'rgba(' + color + ',' + alpha + ')');
+      g.addColorStop(1, 'rgba(' + color + ',0)');
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.scale(rx / Math.max(rx, ry), ry / Math.max(rx, ry));
+      ctx.translate(-cx, -cy);
+      ctx.fillStyle = g;
+      ctx.fillRect(cx - Math.max(rx, ry) * 2, cy - Math.max(rx, ry) * 2, Math.max(rx, ry) * 4, Math.max(rx, ry) * 4);
+      ctx.restore();
+    }
+    softSpot(w * 0.30, h * 0.30, w * 0.16, h * 0.10, '255,244,214', 0.85);
+    softSpot(w * 0.74, h * 0.42, w * 0.10, h * 0.22, '234,210,126', 0.35);
+    softSpot(w * 0.52, h * 0.68, w * 0.22, h * 0.06, '212,175,55', 0.22);
+    var tex = new THREE.CanvasTexture(cv);
+    tex.mapping = THREE.EquirectangularReflectionMapping;
+    if ('encoding' in tex && THREE.sRGBEncoding) tex.encoding = THREE.sRGBEncoding;
+    tex.needsUpdate = true;
+    return tex;
+  }
+
+  var envRT = null;
+  (function setupEnvironment(){
+    try {
+      if (!THREE.PMREMGenerator) return;
+      var pmrem = new THREE.PMREMGenerator(renderer);
+      pmrem.compileEquirectangularShader();
+      var envTex = makeEnvTexture();
+      envRT = pmrem.fromEquirectangular(envTex);
+      scene.environment = envRT.texture;
+      envTex.dispose();
+      pmrem.dispose();
+    } catch (e) { envRT = null; }
+  })();
+
+  /* Transparent glass sphere — physical material picks up the studio
+     environment above for realistic curved reflections and highlights. */
+  var glassGeo = new THREE.SphereGeometry(RADIUS, SPHERE_SEG, SPHERE_SEG);
+  var glassMat = new THREE.MeshPhysicalMaterial({
+    color: 0x0B0B0B,
+    transparent: true,
+    opacity: 0.1,
+    roughness: 0.08,
+    metalness: 0.04,
+    clearcoat: 1,
+    clearcoatRoughness: 0.06,
+    reflectivity: 0.95,
+    envMap: envRT ? envRT.texture : null,
+    envMapIntensity: 1.35,
+    side: THREE.DoubleSide,
+    depthWrite: false
+  });
+  var glassSphere = new THREE.Mesh(glassGeo, glassMat);
+  globeGroup.add(glassSphere);
+
+  /* Subtle inner glow — a soft warm haze sitting just inside the glass,
+     visible through the sphere as gentle ambient light rather than a hard edge. */
+  var innerGlowGeo = new THREE.SphereGeometry(RADIUS * 0.9, isMobile ? 32 : 48, isMobile ? 32 : 48);
+  var innerGlowMat = new THREE.MeshBasicMaterial({
+    color: new THREE.Color(GOLD_LIGHT),
+    transparent: true,
+    opacity: 0.05,
+    side: THREE.BackSide,
+    blending: THREE.AdditiveBlending,
+    depthWrite: false
+  });
+  var innerGlow = new THREE.Mesh(innerGlowGeo, innerGlowMat);
+  globeGroup.add(innerGlow);
+
+  /* Fresnel rim glow — gives the glass its "edge light" feel */
+  var rimGeo = new THREE.SphereGeometry(RADIUS * 1.015, SPHERE_SEG, SPHERE_SEG);
+  var rimMat = new THREE.ShaderMaterial({
+    uniforms: { glowColor: { value: new THREE.Color(GOLD_LIGHT) } },
+    vertexShader: [
+      'varying float vIntensity;',
+      'void main(){',
+      '  vec3 vNormal = normalize(normalMatrix * normal);',
+      '  vec3 vViewDir = normalize(-(modelViewMatrix * vec4(position,1.0)).xyz);',
+      '  vIntensity = pow(1.0 - max(dot(vNormal, vViewDir), 0.0), 2.6);',
+      '  gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);',
+      '}'
+    ].join('\n'),
+    fragmentShader: [
+      'uniform vec3 glowColor;',
+      'varying float vIntensity;',
+      'void main(){',
+      '  gl_FragColor = vec4(glowColor, vIntensity * 0.65);',
+      '}'
+    ].join('\n'),
+    transparent: true,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
+    side: THREE.FrontSide
+  });
+  var rimGlow = new THREE.Mesh(rimGeo, rimMat);
+  globeGroup.add(rimGlow);
+
+  /* ---------------- Occasional golden light sweep ----------------
+     A soft diagonal band of light glides across the glass every
+     12–15 seconds, like a studio light drifting past — then fades
+     out and stays hidden until the next pass. Added directly to the
+     scene (not globeGroup) so the sweep direction reads consistently
+     regardless of the globe's own slow rotation. */
+  var sweepGeo = new THREE.SphereGeometry(RADIUS * 1.008, SPHERE_SEG, SPHERE_SEG);
+  var sweepMat = new THREE.ShaderMaterial({
+    uniforms: {
+      uCenter: { value: -1.4 },
+      uOpacity: { value: 0 },
+      uColor: { value: new THREE.Color(GOLD_LIGHT) }
+    },
+    vertexShader: [
+      'varying vec3 vWorldDir;',
+      'varying float vFresnel;',
+      'void main(){',
+      '  vec3 vNormal = normalize(normalMatrix * normal);',
+      '  vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);',
+      '  vec3 vViewDir = normalize(-mvPosition.xyz);',
+      '  vFresnel = pow(1.0 - max(dot(vNormal, vViewDir), 0.0), 1.3);',
+      '  vWorldDir = normalize((modelMatrix * vec4(position, 1.0)).xyz);',
+      '  gl_Position = projectionMatrix * mvPosition;',
+      '}'
+    ].join('\n'),
+    fragmentShader: [
+      'uniform float uCenter;',
+      'uniform float uOpacity;',
+      'uniform vec3 uColor;',
+      'varying vec3 vWorldDir;',
+      'varying float vFresnel;',
+      'void main(){',
+      '  vec3 sweepAxis = normalize(vec3(1.0, 0.55, 0.35));',
+      '  float band = dot(vWorldDir, sweepAxis);',
+      '  float d = abs(band - uCenter);',
+      '  float glow = smoothstep(0.34, 0.0, d);',
+      '  float intensity = glow * (0.4 + vFresnel * 0.6) * uOpacity;',
+      '  if (intensity <= 0.001) discard;',
+      '  gl_FragColor = vec4(uColor, intensity * 0.8);',
+      '}'
+    ].join('\n'),
+    transparent: true,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
+    side: THREE.FrontSide
+  });
+  var sweepSphere = new THREE.Mesh(sweepGeo, sweepMat);
+  scene.add(sweepSphere);
+
+  var SWEEP_MIN_GAP = 12, SWEEP_MAX_GAP = 15, SWEEP_DURATION = 2.4;
+  var sweepNextTime = THREE.MathUtils.randFloat(SWEEP_MIN_GAP, SWEEP_MAX_GAP);
+  function updateSweep(t){
+    if (t < sweepNextTime) { sweepMat.uniforms.uOpacity.value = 0; return; }
+    var localT = (t - sweepNextTime) / SWEEP_DURATION;
+    if (localT >= 1) {
+      sweepMat.uniforms.uOpacity.value = 0;
+      sweepNextTime = t + THREE.MathUtils.randFloat(SWEEP_MIN_GAP, SWEEP_MAX_GAP);
+      return;
+    }
+    sweepMat.uniforms.uCenter.value = THREE.MathUtils.lerp(-1.4, 1.4, localT);
+    sweepMat.uniforms.uOpacity.value = Math.sin(Math.PI * localT);
+  }
+
+  /* Gold latitude / longitude graticule */
+  var linesGroup = new THREE.Group();
+  var lineR = RADIUS * 1.003;
+  var SEG = 96;
+  var LAT_STEP = 15;   // degrees between latitude rings
+  var LON_COUNT = 12;  // longitude great-circles
+
+  var matEquator = new THREE.LineBasicMaterial({ color: GOLD, transparent: true, opacity: 0.55 });
+  var matLat = new THREE.LineBasicMaterial({ color: GOLD, transparent: true, opacity: 0.22 });
+  var matLon = new THREE.LineBasicMaterial({ color: GOLD, transparent: true, opacity: 0.16 });
+
+  for (var lat = -75; lat <= 75; lat += LAT_STEP) {
+    var phi = THREE.MathUtils.degToRad(90 - lat);
+    var y = lineR * Math.cos(phi);
+    var ringR = lineR * Math.sin(phi);
+    var pts = [];
+    for (var s = 0; s <= SEG; s++) {
+      var t = (s / SEG) * Math.PI * 2;
+      pts.push(new THREE.Vector3(ringR * Math.cos(t), y, ringR * Math.sin(t)));
+    }
+    var geo = new THREE.BufferGeometry().setFromPoints(pts);
+    linesGroup.add(new THREE.LineLoop(geo, lat === 0 ? matEquator : matLat));
+  }
+
+  for (var j = 0; j < LON_COUNT; j++) {
+    var theta = (Math.PI / LON_COUNT) * j;
+    var pts2 = [];
+    for (var s2 = 0; s2 <= SEG; s2++) {
+      var t2 = (s2 / SEG) * Math.PI * 2;
+      pts2.push(new THREE.Vector3(
+        lineR * Math.sin(t2) * Math.cos(theta),
+        lineR * Math.cos(t2),
+        lineR * Math.sin(t2) * Math.sin(theta)
+      ));
+    }
+    var geo2 = new THREE.BufferGeometry().setFromPoints(pts2);
+    linesGroup.add(new THREE.LineLoop(geo2, matLon));
+  }
+
+  globeGroup.add(linesGroup);
+  globeGroup.rotation.x = THREE.MathUtils.degToRad(-8);
+
+  /* ---------------- Glowing city nodes ---------------- */
+  function makeRadialTexture(stops, size){
+    size = size || 128;
+    var cv = document.createElement('canvas');
+    cv.width = cv.height = size;
+    var ctx = cv.getContext('2d');
+    var g = ctx.createRadialGradient(size/2, size/2, 0, size/2, size/2, size/2);
+    stops.forEach(function(st){ g.addColorStop(st[0], st[1]); });
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, size, size);
+    var tex = new THREE.CanvasTexture(cv);
+    tex.needsUpdate = true;
+    return tex;
+  }
+
+  var dotTexture = makeRadialTexture([
+    [0,    'rgba(255,250,235,1)'],
+    [0.25, 'rgba(234,210,126,0.95)'],
+    [0.55, 'rgba(212,175,55,0.35)'],
+    [1,    'rgba(212,175,55,0)']
+  ], 128);
+
+  var haloTexture = makeRadialTexture([
+    [0,   'rgba(234,210,126,0.55)'],
+    [0.4, 'rgba(212,175,55,0.22)'],
+    [1,   'rgba(212,175,55,0)']
+  ], 256);
+
+  function latLonToVector3(lat, lon, radius){
+    var phi = THREE.MathUtils.degToRad(90 - lat);
+    var theta = THREE.MathUtils.degToRad(lon);
+    return new THREE.Vector3(
+      radius * Math.sin(phi) * Math.cos(theta),
+      radius * Math.cos(phi),
+      radius * Math.sin(phi) * Math.sin(theta)
+    );
+  }
+
+  var CITIES = [
+    { name: 'Fergana',    lat: 40.3864, lon: 71.7864,  hub: true },
+    { name: 'London',     lat: 51.5074, lon: -0.1278  },
+    { name: 'New York',   lat: 40.7128, lon: -74.0060 },
+    { name: 'Toronto',    lat: 43.6511, lon: -79.3470 },
+    { name: 'Berlin',     lat: 52.5200, lon: 13.4050  },
+    { name: 'Seoul',      lat: 37.5665, lon: 126.9780 },
+    { name: 'Tokyo',      lat: 35.6762, lon: 139.6503 },
+    { name: 'Dubai',      lat: 25.2048, lon: 55.2708  },
+    { name: 'Singapore',  lat: 1.3521,  lon: 103.8198 }
+  ];
+
+  var NODE_RADIUS = RADIUS * 1.02;
+  var nodesGroup = new THREE.Group();
+  var hitMeshes = [];
+  var cityNodes = [];
+
+  CITIES.forEach(function(c){
+    var pos = latLonToVector3(c.lat, c.lon, NODE_RADIUS);
+    c.pos = pos;
+    var isHub = !!c.hub;
+
+    var dotMat = new THREE.SpriteMaterial({ map: dotTexture, transparent: true, depthWrite: false, opacity: isHub ? 1 : 0.9 });
+    var dot = new THREE.Sprite(dotMat);
+    var dotScale = isHub ? 0.34 : 0.21;
+    dot.scale.set(dotScale, dotScale, 1);
+    dot.position.copy(pos);
+    nodesGroup.add(dot);
+
+    var haloBaseOpacity = isHub ? 0.55 : 0.3;
+    var haloMat = new THREE.SpriteMaterial({ map: haloTexture, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, opacity: haloBaseOpacity });
+    var halo = new THREE.Sprite(haloMat);
+    var haloBaseScale = isHub ? 0.78 : 0.54;
+    halo.scale.set(haloBaseScale, haloBaseScale, 1);
+    halo.position.copy(pos);
+    nodesGroup.add(halo);
+
+    var hit = new THREE.Mesh(
+      new THREE.SphereGeometry(isHub ? 0.32 : 0.26, 10, 10),
+      new THREE.MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false })
+    );
+    hit.position.copy(pos);
+    hit.userData.city = c;
+    nodesGroup.add(hit);
+    hitMeshes.push(hit);
+
+    cityNodes.push({
+      halo: halo,
+      haloBaseScale: haloBaseScale,
+      haloBaseOpacity: haloBaseOpacity,
+      haloAmp: isHub ? 0.5 : 0.35,
+      speed: isHub ? 1.5 : (1.0 + Math.random() * 0.6),
+      offset: Math.random() * Math.PI * 2
+    });
+  });
+
+  globeGroup.add(nodesGroup);
+
+  /* ---------------- Connection arcs (Fergana → each city) ---------------- */
+  function greatCircleArcPoints(startVec, endVec, segments, altitude){
+    var startDir = startVec.clone().normalize();
+    var endDir = endVec.clone().normalize();
+    var angle = startDir.angleTo(endDir);
+    var sinTotal = Math.sin(angle);
+    var pts = [];
+    for (var i = 0; i <= segments; i++) {
+      var t = i / segments;
+      var a, b;
+      if (sinTotal < 1e-6) { a = 1 - t; b = t; }
+      else { a = Math.sin((1 - t) * angle) / sinTotal; b = Math.sin(t * angle) / sinTotal; }
+      var dir = new THREE.Vector3()
+        .addScaledVector(startDir, a)
+        .addScaledVector(endDir, b)
+        .normalize();
+      var r = NODE_RADIUS + altitude * Math.sin(Math.PI * t);
+      pts.push(dir.multiplyScalar(r));
+    }
+    return pts;
+  }
+
+  var arcVertexShader = [
+    'varying vec2 vUv;',
+    'void main(){',
+    '  vUv = uv;',
+    '  gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);',
+    '}'
+  ].join('\n');
+
+  var arcFragmentShader = [
+    'uniform float progress;',
+    'uniform vec3 color;',
+    'uniform float baseOpacity;',
+    'varying vec2 vUv;',
+    'void main(){',
+    '  float edge = 0.05;',
+    '  float body = step(vUv.x, progress);',
+    '  float head = smoothstep(progress - edge, progress, vUv.x) * body;',
+    '  float alpha = body * baseOpacity + head * baseOpacity * 1.8;',
+    '  if (alpha < 0.004) discard;',
+    '  gl_FragColor = vec4(color, alpha);',
+    '}'
+  ].join('\n');
+
+  function makeArcMaterial(colorHex, baseOpacity){
+    return new THREE.ShaderMaterial({
+      uniforms: {
+        progress: { value: 0 },
+        color: { value: new THREE.Color(colorHex) },
+        baseOpacity: { value: baseOpacity }
+      },
+      vertexShader: arcVertexShader,
+      fragmentShader: arcFragmentShader,
+      transparent: true,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
+      side: THREE.DoubleSide
+    });
+  }
+
+  var hubCity = null;
+  CITIES.forEach(function(c){ if (c.hub) hubCity = c; });
+
+  var arcsGroup = new THREE.Group();
+  var arcObjects = [];
+
+  if (hubCity) {
+    var arcIndex = 0;
+    CITIES.forEach(function(c){
+      if (c.hub) return;
+
+      var angle = hubCity.pos.clone().normalize().angleTo(c.pos.clone().normalize());
+      var altitude = RADIUS * (0.16 + angle * 0.22);
+      var pts = greatCircleArcPoints(hubCity.pos, c.pos, isMobile ? 40 : 64, altitude);
+      var curve = new THREE.CatmullRomCurve3(pts);
+
+      var coreMat = makeArcMaterial(GOLD_LIGHT, 0.5);
+      var glowMat = makeArcMaterial(GOLD, 0.16);
+      var coreGeo = new THREE.TubeGeometry(curve, ARC_TUBE_SEG, 0.011, ARC_RADIAL_SEG, false);
+      var glowGeo = new THREE.TubeGeometry(curve, ARC_TUBE_SEG, 0.032, ARC_RADIAL_SEG, false);
+
+      arcsGroup.add(new THREE.Mesh(glowGeo, glowMat));
+      arcsGroup.add(new THREE.Mesh(coreGeo, coreMat));
+
+      var particleMat = new THREE.SpriteMaterial({
+        map: dotTexture, transparent: true, depthWrite: false,
+        blending: THREE.AdditiveBlending, opacity: 0
+      });
+      var particle = new THREE.Sprite(particleMat);
+      particle.scale.set(0.13, 0.13, 1);
+      arcsGroup.add(particle);
+
+      arcObjects.push({
+        curve: curve,
+        uniformsList: [coreMat.uniforms, glowMat.uniforms],
+        particleMat: particleMat,
+        particle: particle,
+        revealDelay: 0.35 + arcIndex * 0.22,
+        revealDuration: 2.6,
+        revealed: reduceMotion,
+        revealCompleteTime: 0,
+        travelDuration: 5.5 + Math.random() * 1.8,
+        travelOffset: Math.random()
+      });
+      arcIndex++;
+    });
+  }
+
+  globeGroup.add(arcsGroup);
+
+  if (reduceMotion) {
+    arcObjects.forEach(function(arc){
+      arc.uniformsList.forEach(function(u){ u.progress.value = 1; });
+    });
+  } else if (hasGsap) {
+    arcObjects.forEach(function(arc){
+      var state = { p: 0 };
+      gsap.to(state, {
+        p: 1,
+        duration: arc.revealDuration,
+        delay: arc.revealDelay,
+        ease: 'power2.inOut',
+        onUpdate: function(){
+          arc.uniformsList.forEach(function(u){ u.progress.value = state.p; });
+        },
+        onComplete: function(){
+          arc.revealed = true;
+          arc.revealCompleteTime = clock.getElapsedTime();
+        }
+      });
+    });
+  } else {
+    // Fallback if gsap isn't available: reveal instantly
+    arcObjects.forEach(function(arc){
+      arc.uniformsList.forEach(function(u){ u.progress.value = 1; });
+      arc.revealed = true;
+    });
+  }
+
+  /* ---------------- Ambient golden particle field ---------------- */
+  var PARTICLE_COUNT = isMobile ? 60 : 135;
+  var particlePositions = new Float32Array(PARTICLE_COUNT * 3);
+  var particleSizes = new Float32Array(PARTICLE_COUNT);
+  var particleBrightness = new Float32Array(PARTICLE_COUNT);
+  var particlePhase = new Float32Array(PARTICLE_COUNT);
+  var particleSpeed = new Float32Array(PARTICLE_COUNT);
+
+  for (var pi = 0; pi < PARTICLE_COUNT; pi++) {
+    var pu = Math.random();
+    var pv = Math.random();
+    var pTheta = 2 * Math.PI * pu;
+    var pPhi = Math.acos(2 * pv - 1);
+    var pR = THREE.MathUtils.randFloat(4.3, 8.6);
+    particlePositions[pi * 3]     = pR * Math.sin(pPhi) * Math.cos(pTheta);
+    particlePositions[pi * 3 + 1] = pR * Math.cos(pPhi);
+    particlePositions[pi * 3 + 2] = pR * Math.sin(pPhi) * Math.sin(pTheta);
+    particleSizes[pi] = THREE.MathUtils.randFloat(3.5, 15);
+    particleBrightness[pi] = THREE.MathUtils.randFloat(0.35, 1.0);
+    particlePhase[pi] = Math.random() * Math.PI * 2;
+    particleSpeed[pi] = THREE.MathUtils.randFloat(0.15, 0.55);
+  }
+
+  var particleGeo = new THREE.BufferGeometry();
+  particleGeo.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
+  particleGeo.setAttribute('aSize', new THREE.BufferAttribute(particleSizes, 1));
+  particleGeo.setAttribute('aBrightness', new THREE.BufferAttribute(particleBrightness, 1));
+  particleGeo.setAttribute('aPhase', new THREE.BufferAttribute(particlePhase, 1));
+  particleGeo.setAttribute('aSpeed', new THREE.BufferAttribute(particleSpeed, 1));
+
+  var particleMaterial = new THREE.ShaderMaterial({
+    uniforms: {
+      uTime: { value: 0 },
+      uStatic: { value: reduceMotion ? 1.0 : 0.0 },
+      uColorA: { value: new THREE.Color(GOLD) },
+      uColorB: { value: new THREE.Color(GOLD_LIGHT) }
+    },
+    vertexShader: [
+      'attribute float aSize;',
+      'attribute float aBrightness;',
+      'attribute float aPhase;',
+      'attribute float aSpeed;',
+      'uniform float uTime;',
+      'uniform float uStatic;',
+      'varying float vAlpha;',
+      'varying float vBrightness;',
+      'void main(){',
+      '  vec3 pos = position;',
+      '  float drift = 1.0 - uStatic;',
+      '  pos.y += sin(uTime * 0.045 + aPhase) * 0.18 * drift;',
+      '  pos.x += cos(uTime * 0.035 + aPhase * 1.3) * 0.14 * drift;',
+      '  pos.z += sin(uTime * 0.04 + aPhase * 0.8) * 0.14 * drift;',
+      '  vec4 mvPosition = modelViewMatrix * vec4(pos, 1.0);',
+      '  float twinkle = mix(0.75, 0.5 + 0.5 * sin(uTime * aSpeed + aPhase * 6.2831), drift);',
+      '  vAlpha = aBrightness * (0.35 + twinkle * 0.65);',
+      '  vBrightness = aBrightness;',
+      '  gl_PointSize = aSize * (300.0 / -mvPosition.z);',
+      '  gl_Position = projectionMatrix * mvPosition;',
+      '}'
+    ].join('\n'),
+    fragmentShader: [
+      'precision mediump float;',
+      'uniform vec3 uColorA;',
+      'uniform vec3 uColorB;',
+      'varying float vAlpha;',
+      'varying float vBrightness;',
+      'void main(){',
+      '  vec2 c = gl_PointCoord - vec2(0.5);',
+      '  float d = length(c);',
+      '  float falloff = smoothstep(0.5, 0.0, d);',
+      '  if (falloff <= 0.001) discard;',
+      '  vec3 color = mix(uColorA, uColorB, vBrightness);',
+      '  gl_FragColor = vec4(color, falloff * vAlpha * 0.85);',
+      '}'
+    ].join('\n'),
+    transparent: true,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending
+  });
+
+  var particleField = new THREE.Points(particleGeo, particleMaterial);
+  scene.add(particleField);
+
+
+  var tooltip = document.getElementById('globeTooltip');
+  var tooltipName = document.getElementById('globeTooltipName');
+  var raycaster = new THREE.Raycaster();
+  var mouseNDC = new THREE.Vector2();
+  var activeCity = null;
+
+  function pointerToNDC(clientX, clientY){
+    var rect = canvas.getBoundingClientRect();
+    mouseNDC.x = ((clientX - rect.left) / rect.width) * 2 - 1;
+    mouseNDC.y = -((clientY - rect.top) / rect.height) * 2 + 1;
+  }
+
+  function showTooltip(city, clientX, clientY){
+    var rect = mount.getBoundingClientRect();
+    tooltip.style.left = (clientX - rect.left) + 'px';
+    tooltip.style.top = (clientY - rect.top) + 'px';
+    tooltipName.textContent = city.name;
+    tooltip.classList.toggle('is-hub', !!city.hub);
+    tooltip.classList.add('show');
+  }
+
+  function hideTooltip(){
+    tooltip.classList.remove('show');
+  }
+
+  function pickCityAt(clientX, clientY){
+    pointerToNDC(clientX, clientY);
+    raycaster.setFromCamera(mouseNDC, camera);
+    var hits = raycaster.intersectObjects(hitMeshes, false);
+    return hits.length ? hits[0].object.userData.city : null;
+  }
+
+  canvas.addEventListener('mousemove', function(e){
+    var city = pickCityAt(e.clientX, e.clientY);
+    if (city) {
+      showTooltip(city, e.clientX, e.clientY);
+      canvas.style.cursor = 'pointer';
+    } else {
+      hideTooltip();
+      canvas.style.cursor = 'default';
+    }
+  });
+  canvas.addEventListener('mouseleave', hideTooltip);
+
+  canvas.addEventListener('touchstart', function(e){
+    if (!e.touches || !e.touches.length) return;
+    var t = e.touches[0];
+    var city = pickCityAt(t.clientX, t.clientY);
+    if (city) {
+      e.preventDefault();
+      if (activeCity === city) {
+        hideTooltip();
+        activeCity = null;
+      } else {
+        showTooltip(city, t.clientX, t.clientY);
+        activeCity = city;
+      }
+    } else {
+      hideTooltip();
+      activeCity = null;
+    }
+  }, { passive: false });
+
+  document.addEventListener('touchstart', function(e){
+    if (e.target !== canvas) { hideTooltip(); activeCity = null; }
+  }, { passive: true });
+
+  /* ---------------- Smooth mouse tilt (max 10°) ---------------- */
+  var MAX_TILT = THREE.MathUtils.degToRad(10);
+  var BASE_TILT_X = THREE.MathUtils.degToRad(-8);
+  var targetTiltX = 0, targetTiltY = 0;
+  var currentTiltX = 0, currentTiltY = 0;
+
+  mount.addEventListener('pointermove', function(e){
+    var rect = mount.getBoundingClientRect();
+    var nx = ((e.clientX - rect.left) / rect.width) * 2 - 1;   // -1..1
+    var ny = ((e.clientY - rect.top) / rect.height) * 2 - 1;   // -1..1
+    nx = Math.max(-1, Math.min(1, nx));
+    ny = Math.max(-1, Math.min(1, ny));
+    targetTiltY = nx * MAX_TILT;
+    targetTiltX = ny * MAX_TILT * 0.6; // slightly gentler on the vertical axis
+  });
+  mount.addEventListener('pointerleave', function(){
+    targetTiltX = 0;
+    targetTiltY = 0;
+  });
+
+  /* ---------------- Golden bloom (with graceful fallback, desktop only) ---------------- */
+  var GLOBE_ROTATION_PERIOD = 105; // seconds — within the 90-120s requirement
+  var bloomReady = !isMobile && !!(THREE.EffectComposer && THREE.RenderPass && THREE.UnrealBloomPass && THREE.ShaderPass);
+  var composer = null;
+  var bloomPass = null;
+
+  if (bloomReady) {
+    try {
+      composer = new THREE.EffectComposer(renderer);
+      composer.addPass(new THREE.RenderPass(scene, camera));
+      bloomPass = new THREE.UnrealBloomPass(new THREE.Vector2(1, 1), 0.55, 0.55, 0.18);
+      bloomPass.renderToScreen = true;
+      composer.addPass(bloomPass);
+    } catch (e) {
+      bloomReady = false;
+      composer = null;
+    }
+  }
+
+  /* ---------------- Render loop ---------------- */
+  function render(){
+    if (composer) composer.render();
+    else renderer.render(scene, camera);
+  }
+
+  function resize(){
+    var w = mount.clientWidth;
+    var h = mount.clientHeight;
+    if (!w || !h) return;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    if (composer) composer.setSize(w, h);
+    if (bloomPass) bloomPass.setSize(w, h);
+    render();
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+
+  if (reduceMotion) {
+    cityNodes.forEach(function(node){
+      var s = node.haloBaseScale * 1.15;
+      node.halo.scale.set(s, s, 1);
+      node.halo.material.opacity = node.haloBaseOpacity * 0.75;
+    });
+    render();
+  } else {
+    (function animate(){
+      requestAnimationFrame(animate);
+      var t = clock.getElapsedTime();
+
+      currentTiltX += (targetTiltX - currentTiltX) * 0.06;
+      currentTiltY += (targetTiltY - currentTiltY) * 0.06;
+
+      globeGroup.rotation.y = t * (2 * Math.PI / GLOBE_ROTATION_PERIOD) + currentTiltY;
+      globeGroup.rotation.x = BASE_TILT_X + currentTiltX;
+      particleMaterial.uniforms.uTime.value = t;
+      updateSweep(t);
+      cityNodes.forEach(function(node){
+        var pulse = (Math.sin(t * node.speed + node.offset) + 1) / 2;
+        var s = node.haloBaseScale * (1 + pulse * node.haloAmp);
+        node.halo.scale.set(s, s, 1);
+        node.halo.material.opacity = node.haloBaseOpacity * (0.45 + pulse * 0.55);
+      });
+      arcObjects.forEach(function(arc){
+        if (!arc.revealed) { arc.particleMat.opacity = 0; return; }
+        var elapsed = t - arc.revealCompleteTime;
+        var travelT = ((elapsed / arc.travelDuration) + arc.travelOffset) % 1;
+        var pos = arc.curve.getPointAt(travelT);
+        arc.particle.position.copy(pos);
+        var fade = Math.sin(Math.PI * travelT);
+        arc.particleMat.opacity = 0.9 * Math.max(fade, 0);
+      });
+      render();
+    })();
+  }
+})();
+
+/* ---------------- FAQ ACCORDION ---------------- */
+document.querySelectorAll('.faq-item').forEach(function(item){
+  var q = item.querySelector('.faq-q'), a = item.querySelector('.faq-a');
+  q.addEventListener('click', function(){
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(other){
+      other.classList.remove('open');
+      other.querySelector('.faq-a').style.maxHeight = null;
+    });
+    if(!isOpen){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight+'px'; }
+  });
+});
+
+/* ---------------- CONTACT FORM ---------------- */
+var contactForm = document.getElementById('contactForm');
+var formSuccess = document.getElementById('formSuccess');
+contactForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  contactForm.style.display = 'none';
+  formSuccess.classList.add('show');
+});
+
+/* ---------------- PHONE FIELD: +998 lock + digits only ---------------- */
+var fldPhone = document.getElementById('fldPhone');
+if(fldPhone){
+  var phonePrefix = '+998 ';
+
+  function placeCaretAtEnd(el){
+    var len = el.value.length;
+    el.setSelectionRange(len, len);
+  }
+
+  fldPhone.addEventListener('focus', function(){
+    if(this.value.indexOf(phonePrefix) !== 0){ this.value = phonePrefix; }
+    if(this.selectionStart < phonePrefix.length){ placeCaretAtEnd(this); }
+  });
+
+  fldPhone.addEventListener('click', function(){
+    if(this.selectionStart < phonePrefix.length){ placeCaretAtEnd(this); }
+  });
+
+  fldPhone.addEventListener('keydown', function(e){
+    var caretStart = this.selectionStart;
+    var caretEnd = this.selectionEnd;
+    if((e.key === 'Backspace' || e.key === 'Delete') && caretStart <= phonePrefix.length && caretEnd <= phonePrefix.length){
+      e.preventDefault();
+    }
+  });
+
+  fldPhone.addEventListener('input', function(){
+    var digitsOnly = this.value.replace(/\D/g, '');
+    if(digitsOnly.indexOf('998') === 0){ digitsOnly = digitsOnly.slice(3); }
+    digitsOnly = digitsOnly.slice(0, 9);
+    this.value = phonePrefix + digitsOnly;
+    placeCaretAtEnd(this);
+  });
+
+  fldPhone.addEventListener('paste', function(e){
+    e.preventDefault();
+    var pasted = (e.clipboardData || window.clipboardData).getData('text');
+    var digitsOnly = pasted.replace(/\D/g, '');
+    if(digitsOnly.indexOf('998') === 0){ digitsOnly = digitsOnly.slice(3); }
+    digitsOnly = digitsOnly.slice(0, 9);
+    this.value = phonePrefix + digitsOnly;
+    placeCaretAtEnd(this);
+  });
+}
+
+/* ---------------- GALLERY REVEAL ---------------- */
+if('IntersectionObserver' in window){
+  var gio = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){ if(entry.isIntersecting){ entry.target.classList.add('in'); gio.unobserve(entry.target); } });
+  }, {threshold:0.1});
+  document.querySelectorAll('.mason-item').forEach(function(el){ gio.observe(el); });
+}
+
+/* ---------------- VIDEO LIGHTBOX ---------------- */
+(function(){
+  var lightbox = document.getElementById('videoLightbox');
+  var vlVideo = document.getElementById('vlVideo');
+  var vlBack = document.getElementById('vlBack');
+  var vlVolume = document.getElementById('vlVolume');
+  if(!lightbox || !vlVideo) return;
+
+  function setVolumeIcon(){
+    vlVolume.textContent = vlVideo.muted ? '🔇' : '🔊';
+  }
+
+  function openLightbox(src){
+    vlVideo.src = src;
+    vlVideo.muted = false;
+    vlVideo.currentTime = 0;
+    setVolumeIcon();
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    vlVideo.play().catch(function(){});
+  }
+
+  function closeLightbox(){
+    vlVideo.pause();
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+    vlVideo.removeAttribute('src');
+    vlVideo.load();
+  }
+
+  document.querySelectorAll('.gallery-video').forEach(function(v){
+    v.addEventListener('click', function(){ openLightbox(v.getAttribute('src') || v.currentSrc); });
+  });
+
+  vlBack.addEventListener('click', closeLightbox);
+  vlVolume.addEventListener('click', function(){
+    vlVideo.muted = !vlVideo.muted;
+    setVolumeIcon();
+  });
+  lightbox.addEventListener('click', function(e){ if(e.target === lightbox){ closeLightbox(); } });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && lightbox.classList.contains('open')){ closeLightbox(); } });
+})();
+
+})();
+</script>
+
+<div class="video-lightbox" id="videoLightbox">
+  <button class="vl-btn vl-back" id="vlBack" aria-label="Back">← Back</button>
+  <button class="vl-btn vl-volume" id="vlVolume" aria-label="Toggle volume">🔊</button>
+  <video id="vlVideo" playsinline></video>
+</div>
+</body>
+</html>
+
