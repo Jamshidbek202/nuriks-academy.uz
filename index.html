@@ -1982,7 +1982,7 @@ plItems.forEach(function(pl){
     '  float edge = 0.05;',
     '  float body = step(vUv.x, progress);',
     '  float head = smoothstep(progress - edge, progress, vUv.x) * body;',
-    '  float alpha = body * baseOpacity + head * baseOpacity * 1.0;
+    '  float alpha = body * baseOpacity + head * baseOpacity * 1.0;',
     '  if (alpha < 0.004) discard;',
     '  gl_FragColor = vec4(color, alpha);',
     '}'
