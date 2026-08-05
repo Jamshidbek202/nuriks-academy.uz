@@ -441,6 +441,12 @@ html[data-theme="light"] .hero-scrim{background:radial-gradient(120% 90% at 50% 
 .news-date{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:block;}
 .news-card h4{font-size:1.08rem;color:var(--ink);margin-bottom:8px;line-height:1.35;}
 .news-card p{font-size:.88rem;color:var(--ink-soft);line-height:1.6;}
+.news-card .art img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
 
 /* ============================================================
    FAQ
@@ -629,7 +635,7 @@ footer{padding:70px 0 34px;border-top:1px solid var(--line);}
     <p class="hero-sub" id="heroSub" data-i18n="hero.sub">Learn English with Confidence.</p>
     <div class="hero-ctas" id="heroCtas">
       <a href="#contact" class="btn btn-gold" data-magnetic data-i18n="hero.cta1">Book a Free Lesson</a>
-      <a href="#placement" class="btn btn-ghost" data-magnetic data-i18n="hero.cta2">Take Placement Test</a>
+      <a href="#placement" class="btn btn-ghost" data-magnetic data-i18n="hero.cta2">Take free Test</a>
     </div>
   </div>
   <div class="scroll-cue"><div class="stick"></div><span data-i18n="hero.scroll">Scroll</span></div>
@@ -834,7 +840,7 @@ footer{padding:70px 0 34px;border-top:1px solid var(--line);}
       <p class="lede" data-i18n="placement.lede">Three quick questions — a taste of the full assessment our academy uses for every new student.</p>
     </div>
     <div class="test-card reveal-scale" style="text-align:center;">
-      <a href="https://nuriksacademy.netlify.app" target="_blank" rel="noopener" class="btn btn-gold btn-sm" data-magnetic data-i18n="placement.cta">Take Placement Test</a>
+      <a href="https://nuriksacademy.netlify.app" target="_blank" rel="noopener" class="btn btn-gold btn-sm" data-magnetic data-i18n="placement.cta">Take free Test</a>
     </div>
   </div>
 </section>
@@ -930,10 +936,15 @@ footer{padding:70px 0 34px;border-top:1px solid var(--line);}
         </div>
       </div>
       <div class="teach-cell reveal" style="--i:1">
-        <div class="photo" style="--g:linear-gradient(160deg,#20190f,#0b0b0b)">
-          <span class="initials">KK</span>
-          <button class="play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8V4z"/></svg></button>
-        </div>
+       <div class="photo">
+    <img src="assets/image_19.jpg" alt="Ulugbek Nurmirzaev">
+    <button class="play" type="button" aria-label="Play video">
+        <svg viewBox="0 0 24 24">
+            <path d="M6 4l15 8-15 8V4z"/>
+        </svg>
+    </button>
+</div>
+          
       
         <div class="info">
           <h4>Ulugbek Nurmirzaev</h4>
@@ -949,7 +960,7 @@ footer{padding:70px 0 34px;border-top:1px solid var(--line);}
         <div class="info">
           <h4>Farzona Turgunova</h4>
           <div class="role" data-i18n="teachers.role">IELTS Instructor</div>
-          <div class="badges"><span>CELTA</span><span>IELTS 7.0</span><span>B2 CEFR</span></div>
+          <div class="badges"><span>CELTA</span><span>IELTS 7.0</span><span>B2 CEFR</span><span>2+ <span data-i18n="teachers.yrs">Years</span></span></div>
         </div>
       </div>
       <div class="teach-cell reveal" style="--i:6">
@@ -987,8 +998,10 @@ footer{padding:70px 0 34px;border-top:1px solid var(--line);}
     </div>
     <div class="news-grid stagger">
       <a class="news-card reveal" href="#" style="--i:0">
-        <div class="art" style="--g:linear-gradient(150deg,#1c1a14,#0b0b0b)"></div>
-        <div class="news-body"><span class="news-date" data-i18n="news.d1">September 2026</span><h4 data-i18n="news.h1">Speaking Club expands to two evenings a week</h4><p data-i18n="news.p1">More seats, more topics, and a new debate format for advanced students.</p></div>
+        <div class="art">
+    <img src="assets/news_24.jpg" alt="September Enrollment Now Open">
+</div>
+        <div class="news-body"><span class="news-date" data-i18n="news.d1">September 2026</span><h4 data-i18n="news.h1">Secure your place in our September groups for Kids English, General English, IELTS and CEFR preparation</h4><p data-i18n="news.p1">Reserve your place now and start your English journey this September.</p></div>
       </a>
       <a class="news-card reveal" href="#" style="--i:1">
         <div class="art" style="--g:linear-gradient(160deg,#20190f,#0b0b0b)"></div>
@@ -1286,7 +1299,7 @@ var translations = {
     "fc.1":"24 урока в месяц","fc.2":"6 уроков в неделю","fc.3":"Speaking Club","fc.4":"Учитель поддержки","fc.5":"Учебник","fc.6":"Рабочая тетрадь","fc.7":"Мобильное приложение","fc.8":"Индивидуальная поддержка",
     "book.eyebrow":"Книга академии","book.title":"Одна книга. Все преимущества.","book.p":"Листайте, чтобы открыть её — вся академия, скреплённая одной золотой нитью.","book.pg1":"Speaking Club","book.pg2":"Учитель поддержки","book.pg3":"Рабочая тетрадь","book.pg4":"Практика","book.pg5":"Стратегия IELTS","book.pg6":"Уверенность",
     "global.eyebrow":"География","global.title":"Из Ферганы в мир.","global.dest":"Направление учёбы","global.home":"Родная академия",
-    "placement.eyebrow":"Тест","placement.title":"Определите свой уровень.","placement.lede":"Три коротких вопроса — часть полного теста нашей академии.","placement.donetitle":"Ваш примерный уровень","placement.cta":"Пройти полный тест",
+    "placement.eyebrow":"Тест","placement.title":"Определите свой уровень.","placement.lede":"Три коротких вопроса — часть полного теста нашей академии.","placement.donetitle":"Ваш примерный уровень","placement.cta":"Пройти бесплатный тест",
     "results.eyebrow":"Результаты","results.title":"Доказательства, а не обещания.","results.overall":"Общий балл","results.adv":"Продвинутый","results.upperint":"Выше среднего","results.grads":"Выпускников","results.since":"С 2024 года",
     "gallery.eyebrow":"Внутри академии","gallery.title":"Место, куда хочется приходить.","gallery.g1":"Современные классы","gallery.g2":"Учебный процесс","gallery.g3":"Мероприятия","gallery.g4":"Английский для детей","gallery.g5":"speaking club","gallery.g6":"Подготовка к экзаменам",
     "teachers.eyebrow":"Наши учителя","teachers.title":"Учитесь у лучших.","teachers.lede":"Это высококвалифицированные специалисты с сертификатами CELTA и IELTS 9.0.","teachers.role":"Преподаватель IELTS","teachers.yrs":"лет",
@@ -1307,7 +1320,7 @@ var translations = {
     "fc.1":"Oyiga 24 dars","fc.2":"Haftada 6 dars","fc.3":"Speaking Club","fc.4":"Yordamchi o'qituvchi","fc.5":"Darslik","fc.6":"Ish daftari","fc.7":"Mobil ilova","fc.8":"Individual yordam",
     "book.eyebrow":"Akademiya kitobi","book.title":"Bitta kitob. Barcha afzalliklar.","book.p":"Uni ochish uchun suring — bitta oltin ip bilan bog'langan akademiya tajribasi.","book.pg1":"Speaking Club","book.pg2":"Yordamchi o'qituvchi","book.pg3":"Ish daftari","book.pg4":"Mashq","book.pg5":"IELTS strategiyasi","book.pg6":"Ishonch",
     "global.eyebrow":"Global miqyos","global.title":"Farg'onadan dunyoga.","global.dest":"O'qish yo'nalishi","global.home":"Ona akademiya",
-    "placement.eyebrow":"Test","placement.title":"Darajangizni aniqlang.","placement.lede":"Uchta qisqa savol — akademiyamizning to'liq testidan namuna.","placement.donetitle":"Taxminiy darajangiz","placement.cta":"To'liq testni topshirish",
+    "placement.eyebrow":"Test","placement.title":"Darajangizni aniqlang.","placement.lede":"Uchta qisqa savol — akademiyamizning to'liq testidan namuna.","placement.donetitle":"Taxminiy darajangiz","placement.cta":"Bepul testni boshlash",
     "results.eyebrow":"Talabalar natijalari","results.title":"Va'da emas, dalil.","results.overall":"Umumiy ball","results.adv":"Yuqori daraja","results.upperint":"O'rta-yuqori","results.grads":"Bitiruvchilar","results.since":"2024 yildan buyon",
     "gallery.eyebrow":"Akademiya ichida","gallery.title":"Kelgingiz keladigan joy.","gallery.g1":"Zamonaviy sinflar","gallery.g2":"Dars jarayoni","gallery.g3":"Tadbirlar","gallery.g4":"Bolalar uchun ingliz tili","gallery.g5":"speaking club","gallery.g6":"Imtihonga tayyorgarlik",
     "teachers.eyebrow":"Ustozlarimiz","teachers.title":"Eng yaxshilardan o'rganing.","teachers.lede":"Ular CELTA va IELTS 9.0 sertifikatlariga ega yuqori malakali mutaxassislardir.","teachers.role":"IELTS o'qituvchisi","teachers.yrs":"yil",
