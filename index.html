@@ -2320,14 +2320,62 @@ document.querySelectorAll('.faq-item').forEach(function(item){
   });
 });
 
-/* ---------------- CONTACT FORM ---------------- */
+/* ---------------- CONTACT FORM → TELEGRAM ---------------- */
+
 var contactForm = document.getElementById('contactForm');
 var formSuccess = document.getElementById('formSuccess');
-contactForm.addEventListener('submit', function(e){
-  e.preventDefault();
-  contactForm.style.display = 'none';
-  formSuccess.classList.add('show');
-});
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+
+    // Запоминаем исходный текст кнопки
+    const originalText = submitButton.textContent;
+
+    // Блокируем кнопку во время отправки
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+
+    const formData = new FormData(contactForm);
+
+    const data = {
+      name: formData.get('name'),
+      phone: formData.get('phone'),
+      course: formData.get('course'),
+      message: formData.get('message')
+    };
+
+    try {
+      const response = await fetch('/.netlify/functions/send-telegram', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to send request');
+      }
+
+      // Успешная отправка
+      contactForm.style.display = 'none';
+      formSuccess.classList.add('show');
+
+    } catch (error) {
+      console.error('Form submission error:', error);
+
+      alert('Could not send your request. Please try again.');
+
+      submitButton.disabled = false;
+      submitButton.textContent = originalText;
+    }
+  });
+}
 
 /* ---------------- PHONE FIELD: +998 lock + digits only ---------------- */
 var fldPhone = document.getElementById('fldPhone');
