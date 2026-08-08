@@ -2,7 +2,9 @@ exports.handler = async function (event) {
   if (event.httpMethod !== "POST") {
     return {
       statusCode: 405,
-      body: JSON.stringify({ error: "Method Not Allowed" })
+      body: JSON.stringify({
+        error: "Method Not Allowed"
+      })
     };
   }
 
@@ -20,8 +22,7 @@ exports.handler = async function (event) {
       };
     }
 
-    const text =
-`📩 NEW FREE LESSON REQUEST
+    const text = `📩 NEW FREE LESSON REQUEST
 
 👤 Name: ${name}
 📞 Phone: ${phone}
@@ -45,11 +46,12 @@ exports.handler = async function (event) {
     const result = await response.json();
 
     if (!result.ok) {
+      console.error("Telegram error:", result);
+
       return {
         statusCode: 500,
         body: JSON.stringify({
-          error: "Telegram error",
-          details: result
+          error: "Telegram error"
         })
       };
     }
@@ -62,6 +64,8 @@ exports.handler = async function (event) {
     };
 
   } catch (error) {
+    console.error("Function error:", error);
+
     return {
       statusCode: 500,
       body: JSON.stringify({
